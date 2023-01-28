@@ -7,7 +7,7 @@
 
 import UIKit
 
-let APP_COLOR = UIColor(hex: "#0D1015")
+let APP_COLOR = UIColor(hex: "#04D5E3")
 let CHOOSE_GENRE_COLOR = UIColor(hex: "#FB716E")
 let baseURL = "https://api.themoviedb.org/3/"
 let baseURLImage = "https://image.tmdb.org/t/p/w500"

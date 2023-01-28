@@ -6,20 +6,57 @@
 //
 
 import UIKit
+import SnapKit
 
 class TabbarItem: UIView {
     var index: Int!
     var selectedAction: VoidCallBack!
     var imageView: UIImageView!
+    var separatorView: UIView!
+    var label: UILabel!
     
     init(frame: CGRect, index: Int, selectedAction: @escaping VoidCallBack) {
         super.init(frame: frame)
         self.index = index
         self.selectedAction = selectedAction
+        separatorView = UIView(frame: CGRect(x: 0, y: 0, width: frame.width, height: 3))
+        separatorView.backgroundColor = UIColor(hex: "#04D5E3")
         let imageView = UIImageView.init(image: UIImage(named: "ic_tabbar\(index+1)"))
         self.imageView = imageView
+        
+        label = UILabel()
+        self.addSubview(separatorView)
         self.addSubview(imageView)
-        imageView.center = self.center
+        self.addSubview(label)
+        label.font = CommonUtil.getAppFontRegular(12)
+        var text: String = ""
+        switch index {
+        case 0:
+            text = "Movies"
+        case 1:
+            text = "TV Show"
+        case 2:
+            text = "Favorite"
+        case 3:
+            text = "Statistical"
+        case 4:
+            text = "Notes"
+        default:
+            break
+        }
+        label.text = text
+        label.snp.makeConstraints {
+            $0.top.equalTo(imageView.snp.bottom).offset(5)
+            $0.centerX.equalToSuperview()
+        }
+        
+        imageView.snp.makeConstraints {
+            $0.width.equalTo(20)
+            $0.height.equalTo(20)
+            $0.top.equalToSuperview().offset(10)
+            $0.centerX.equalToSuperview()
+        }
+//        imageView.center = self.center
         self.addTapGestureRecognizer(action: { [weak self] in
             guard let `self` = self else { return }
             self.selectedAction()
@@ -27,10 +64,14 @@ class TabbarItem: UIView {
     }
     
     func selected() {
+        self.label.textColor = APP_COLOR
+        self.separatorView.isHidden = false
         self.imageView.image = UIImage(named: "ic_tabbar\(index+1)_selected")
     }
     
     func unselected() {
+        self.label.textColor = .black
+        self.separatorView.isHidden = true
         self.imageView.image = UIImage(named: "ic_tabbar\(index+1)")
     }
     
@@ -42,7 +83,7 @@ class TabbarItem: UIView {
 class TabbarViewController: UITabBarController {
     
     let customTabbarHeight: CGFloat = 54
-    var listVc: [UIViewController] = [AppScreens.statistical.createViewController(), AppScreens.tvShow.createViewController(), AppScreens.home.createViewController(), AppScreens.favorite.createViewController(), AppScreens.note.createViewController()]
+    var listVc: [UIViewController] = [AppScreens.movie.createViewController(), AppScreens.tvShow.createViewController(), AppScreens.home.createViewController(), AppScreens.favorite.createViewController(), AppScreens.note.createViewController()]
     var countVc: Int {
         return listVc.count
     }
@@ -54,7 +95,7 @@ class TabbarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = APP_COLOR
+        self.view.backgroundColor = .white
         self.viewControllers = listVc
         self.setupGradientTabbar()
         var height: CGFloat = 10
@@ -66,19 +107,18 @@ class TabbarViewController: UITabBarController {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.borderWidth = 1
         stackView.borderColor = UIColor(hex: "#3F4249")
-        stackView.backgroundColor = UIColor(hex: "#191C23")
-        stackView.cornerRadius = 16
-        let frame = CGRect(x: 0, y: 0, width: (CommonUtil.SCREEN_WIDTH - 32) / CGFloat(countVc), height: customTabbarHeight)
+        stackView.backgroundColor = .white
+        let frame = CGRect(x: 0, y: 0, width: (CommonUtil.SCREEN_WIDTH) / CGFloat(countVc), height: customTabbarHeight)
         self.view.addSubview(stackView)
-        stackView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -AppDelegate.shared.window!.safeAreaInsets.bottom - height).isActive = true
-        stackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 16).isActive = true
-        stackView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -16).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -AppDelegate.shared.window!.safeAreaInsets.bottom).isActive = true
+        stackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
+        stackView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
         stackView.heightAnchor.constraint(equalToConstant: customTabbarHeight).isActive = true
         for (index, _) in self.tabBar.items!.enumerated() {
             let tabbarItem = TabbarItem(frame: frame, index: index, selectedAction: {})
             stackView.addArrangedSubview(tabbarItem)
             tabbarItem.translatesAutoresizingMaskIntoConstraints = false
-            tabbarItem.widthAnchor.constraint(equalToConstant: (CommonUtil.SCREEN_WIDTH - 32) / CGFloat(countVc)).isActive = true
+            tabbarItem.widthAnchor.constraint(equalToConstant: (CommonUtil.SCREEN_WIDTH) / CGFloat(countVc)).isActive = true
             tabbarItem.selectedAction = { [weak self] in
                 guard let `self` = self else { return }
                 self.unselectAll()

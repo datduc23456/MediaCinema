@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32838852062BC7567F7833AC /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F0B95CB2D8DB05E18F5C7 /* MovieViewController.swift */; };
+		5269664D29844AED009C0F92 /* Lato-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269663B29844AEB009C0F92 /* Lato-SemiboldItalic.ttf */; };
+		5269664E29844AED009C0F92 /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269663C29844AEB009C0F92 /* Lato-Heavy.ttf */; };
+		5269664F29844AED009C0F92 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269663D29844AEB009C0F92 /* Lato-LightItalic.ttf */; };
+		5269665029844AED009C0F92 /* Lato-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269663E29844AEB009C0F92 /* Lato-HeavyItalic.ttf */; };
+		5269665129844AED009C0F92 /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269663F29844AEC009C0F92 /* Lato-Medium.ttf */; };
+		5269665229844AED009C0F92 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269664029844AEC009C0F92 /* Lato-Bold.ttf */; };
+		5269665329844AED009C0F92 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269664129844AEC009C0F92 /* Lato-Thin.ttf */; };
+		5269665429844AED009C0F92 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269664229844AEC009C0F92 /* Lato-Regular.ttf */; };
+		5269665529844AED009C0F92 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269664329844AEC009C0F92 /* Lato-Black.ttf */; };
+		5269665629844AED009C0F92 /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269664429844AEC009C0F92 /* Lato-Hairline.ttf */; };
+		5269665729844AED009C0F92 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269664529844AEC009C0F92 /* Lato-BoldItalic.ttf */; };
+		5269665829844AED009C0F92 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269664629844AEC009C0F92 /* Lato-Italic.ttf */; };
+		5269665929844AED009C0F92 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269664729844AEC009C0F92 /* Lato-Light.ttf */; };
+		5269665A29844AED009C0F92 /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269664829844AED009C0F92 /* Lato-HairlineItalic.ttf */; };
+		5269665B29844AED009C0F92 /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269664929844AED009C0F92 /* Lato-MediumItalic.ttf */; };
+		5269665C29844AED009C0F92 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269664A29844AED009C0F92 /* Lato-ThinItalic.ttf */; };
+		5269665D29844AED009C0F92 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269664B29844AED009C0F92 /* Lato-BlackItalic.ttf */; };
+		5269665E29844AED009C0F92 /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269664C29844AED009C0F92 /* Lato-Semibold.ttf */; };
 		52C035FB2982D1BD00025F24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C035FA2982D1BD00025F24 /* AppDelegate.swift */; };
 		52C035FF2982D1BD00025F24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C035FE2982D1BD00025F24 /* ViewController.swift */; };
 		52C036022982D1BD00025F24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C036002982D1BD00025F24 /* Main.storyboard */; };
@@ -116,11 +135,35 @@
 		52C036F72982DBC600025F24 /* AYImageViewerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C036EF2982DBC600025F24 /* AYImageViewerAnimator.swift */; };
 		52C036F82982DBC600025F24 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C036F02982DBC600025F24 /* Style.swift */; };
 		52C036F92982DBC600025F24 /* AYImageViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C036F12982DBC600025F24 /* AYImageViewerViewController.xib */; };
+		52DD1C1029857B1400A1481A /* AVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD1C0E29857B1400A1481A /* AVCViewController.swift */; };
+		52DD1C1129857B1400A1481A /* AVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DD1C0F29857B1400A1481A /* AVCViewController.xib */; };
+		5D49C95A830E1E7DB6135142 /* MoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D896100313AB69C7BC65D31 /* MoviePresenter.swift */; };
+		9D2334B1E1B1401C5A6C087E /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B24799E068ACA8816A095D6 /* MovieViewController.xib */; };
 		ECFCF6AD10CEB6F812F00166 /* Pods_MediaCinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE51344147AABCC65A0FB9E /* Pods_MediaCinema.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		022D1936DFED85992CFD1936 /* Pods-MediaCinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaCinema.release.xcconfig"; path = "Target Support Files/Pods-MediaCinema/Pods-MediaCinema.release.xcconfig"; sourceTree = "<group>"; };
+		0D896100313AB69C7BC65D31 /* MoviePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
+		458F0B95CB2D8DB05E18F5C7 /* MovieViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		5269663B29844AEB009C0F92 /* Lato-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		5269663C29844AEB009C0F92 /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy.ttf"; sourceTree = "<group>"; };
+		5269663D29844AEB009C0F92 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		5269663E29844AEB009C0F92 /* Lato-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		5269663F29844AEC009C0F92 /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium.ttf"; sourceTree = "<group>"; };
+		5269664029844AEC009C0F92 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		5269664129844AEC009C0F92 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		5269664229844AEC009C0F92 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		5269664329844AEC009C0F92 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		5269664429844AEC009C0F92 /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
+		5269664529844AEC009C0F92 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		5269664629844AEC009C0F92 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		5269664729844AEC009C0F92 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		5269664829844AED009C0F92 /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
+		5269664929844AED009C0F92 /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
+		5269664A29844AED009C0F92 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		5269664B29844AED009C0F92 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		5269664C29844AED009C0F92 /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
 		52C035F72982D1BD00025F24 /* MediaCinema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaCinema.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C035FA2982D1BD00025F24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52C035FE2982D1BD00025F24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -232,6 +275,9 @@
 		52C036EF2982DBC600025F24 /* AYImageViewerAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYImageViewerAnimator.swift; sourceTree = "<group>"; };
 		52C036F02982DBC600025F24 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		52C036F12982DBC600025F24 /* AYImageViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AYImageViewerViewController.xib; sourceTree = "<group>"; };
+		52DD1C0E29857B1400A1481A /* AVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCViewController.swift; sourceTree = "<group>"; };
+		52DD1C0F29857B1400A1481A /* AVCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AVCViewController.xib; sourceTree = "<group>"; };
+		6B24799E068ACA8816A095D6 /* MovieViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
 		6CE51344147AABCC65A0FB9E /* Pods_MediaCinema.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaCinema.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49C597171245711D5B443C8 /* Pods-MediaCinema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaCinema.debug.xcconfig"; path = "Target Support Files/Pods-MediaCinema/Pods-MediaCinema.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -298,6 +344,24 @@
 				52C036122982D49D00025F24 /* seagullb.ttf */,
 				52C036132982D49D00025F24 /* Nexa Bold.otf */,
 				52C036142982D49D00025F24 /* SEAGULLH.ttf */,
+				5269664329844AEC009C0F92 /* Lato-Black.ttf */,
+				5269664B29844AED009C0F92 /* Lato-BlackItalic.ttf */,
+				5269664029844AEC009C0F92 /* Lato-Bold.ttf */,
+				5269664529844AEC009C0F92 /* Lato-BoldItalic.ttf */,
+				5269664429844AEC009C0F92 /* Lato-Hairline.ttf */,
+				5269664829844AED009C0F92 /* Lato-HairlineItalic.ttf */,
+				5269663C29844AEB009C0F92 /* Lato-Heavy.ttf */,
+				5269663E29844AEB009C0F92 /* Lato-HeavyItalic.ttf */,
+				5269664629844AEC009C0F92 /* Lato-Italic.ttf */,
+				5269664729844AEC009C0F92 /* Lato-Light.ttf */,
+				5269663D29844AEB009C0F92 /* Lato-LightItalic.ttf */,
+				5269663F29844AEC009C0F92 /* Lato-Medium.ttf */,
+				5269664929844AED009C0F92 /* Lato-MediumItalic.ttf */,
+				5269664229844AEC009C0F92 /* Lato-Regular.ttf */,
+				5269664C29844AED009C0F92 /* Lato-Semibold.ttf */,
+				5269663B29844AEB009C0F92 /* Lato-SemiboldItalic.ttf */,
+				5269664129844AEC009C0F92 /* Lato-Thin.ttf */,
+				5269664A29844AED009C0F92 /* Lato-ThinItalic.ttf */,
 				52C036152982D49D00025F24 /* seagull heavy bt.ttf */,
 				52C036162982D49D00025F24 /* SeagullRegular.ttf */,
 				52C036172982D49D00025F24 /* SeagullLightBT.ttf */,
@@ -432,6 +496,7 @@
 		52C036872982D83B00025F24 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7D71D8F094322168346B8C22 /* Movie */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -607,6 +672,26 @@
 			path = AYImageKit;
 			sourceTree = "<group>";
 		};
+		58A8F53659CD3BFBC66DA6F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				458F0B95CB2D8DB05E18F5C7 /* MovieViewController.swift */,
+				6B24799E068ACA8816A095D6 /* MovieViewController.xib */,
+				52DD1C0E29857B1400A1481A /* AVCViewController.swift */,
+				52DD1C0F29857B1400A1481A /* AVCViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D71D8F094322168346B8C22 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				ECDADC499106F2ABACDEEA3A /* Presenter */,
+				58A8F53659CD3BFBC66DA6F8 /* View */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
 		BFE0F76D18A3A5FFE5F61F45 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -622,6 +707,14 @@
 				6CE51344147AABCC65A0FB9E /* Pods_MediaCinema.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECDADC499106F2ABACDEEA3A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0D896100313AB69C7BC65D31 /* MoviePresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -684,14 +777,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5269664E29844AED009C0F92 /* Lato-Heavy.ttf in Resources */,
+				5269665C29844AED009C0F92 /* Lato-ThinItalic.ttf in Resources */,
 				52C036072982D1C000025F24 /* LaunchScreen.storyboard in Resources */,
+				5269665A29844AED009C0F92 /* Lato-HairlineItalic.ttf in Resources */,
+				5269665B29844AED009C0F92 /* Lato-MediumItalic.ttf in Resources */,
 				52C036232982D49D00025F24 /* Nexa Bold.otf in Resources */,
 				52C036252982D49D00025F24 /* seagull heavy bt.ttf in Resources */,
+				5269665329844AED009C0F92 /* Lato-Thin.ttf in Resources */,
+				5269665729844AED009C0F92 /* Lato-BoldItalic.ttf in Resources */,
 				52C0361F2982D49D00025F24 /* SeagullBoldItalic.ttf in Resources */,
+				5269665D29844AED009C0F92 /* Lato-BlackItalic.ttf in Resources */,
+				5269665129844AED009C0F92 /* Lato-Medium.ttf in Resources */,
 				52C036242982D49D00025F24 /* SEAGULLH.ttf in Resources */,
+				5269665E29844AED009C0F92 /* Lato-Semibold.ttf in Resources */,
+				5269665229844AED009C0F92 /* Lato-Bold.ttf in Resources */,
+				5269664D29844AED009C0F92 /* Lato-SemiboldItalic.ttf in Resources */,
 				52C036292982D49D00025F24 /* SEAGULLL.ttf in Resources */,
 				52C0362E2982D49D00025F24 /* seagull bold italic.ttf in Resources */,
 				52C036272982D49D00025F24 /* SeagullLightBT.ttf in Resources */,
+				5269665029844AED009C0F92 /* Lato-HeavyItalic.ttf in Resources */,
+				5269665629844AED009C0F92 /* Lato-Hairline.ttf in Resources */,
+				5269664F29844AED009C0F92 /* Lato-LightItalic.ttf in Resources */,
 				52C0362A2982D49D00025F24 /* SeagullItalic.ttf in Resources */,
 				52C036C92982D96B00025F24 /* FullScreenNativeAdView.xib in Resources */,
 				52C036262982D49D00025F24 /* SeagullRegular.ttf in Resources */,
@@ -701,15 +808,21 @@
 				52C036C22982D96B00025F24 /* BigNativeAdView.xib in Resources */,
 				52C036212982D49D00025F24 /* seagull italic.ttf in Resources */,
 				52C036F92982DBC600025F24 /* AYImageViewerViewController.xib in Resources */,
+				52DD1C1129857B1400A1481A /* AVCViewController.xib in Resources */,
 				52C036C42982D96B00025F24 /* MediumNativeAdView.xib in Resources */,
+				5269665929844AED009C0F92 /* Lato-Light.ttf in Resources */,
 				52C036E82982DB1500025F24 /* TabbarVC.xib in Resources */,
 				52C036C72982D96B00025F24 /* SmallNativeAdView.xib in Resources */,
 				52C0362C2982D49D00025F24 /* Nexa Light.otf in Resources */,
+				5269665829844AED009C0F92 /* Lato-Italic.ttf in Resources */,
+				5269665529844AED009C0F92 /* Lato-Black.ttf in Resources */,
 				52C036022982D1BD00025F24 /* Main.storyboard in Resources */,
 				52C0362D2982D49D00025F24 /* Nexa Regular.otf in Resources */,
 				52C036202982D49D00025F24 /* SeagullBold.ttf in Resources */,
 				52C036282982D49D00025F24 /* seagullm.ttf in Resources */,
 				52C036F62982DBC600025F24 /* Assets.xcassets in Resources */,
+				5269665429844AED009C0F92 /* Lato-Regular.ttf in Resources */,
+				9D2334B1E1B1401C5A6C087E /* MovieViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +890,7 @@
 				52C036682982D78900025F24 /* UIView+Ext.swift in Sources */,
 				52C036672982D78900025F24 /* UITableView+Ext.swift in Sources */,
 				52C0366A2982D78900025F24 /* Array+Ext.swift in Sources */,
+				52DD1C1029857B1400A1481A /* AVCViewController.swift in Sources */,
 				52C036B62982D96B00025F24 /* UIColorExtension.swift in Sources */,
 				52C036D62982D9AC00025F24 /* BaseCollectionView.swift in Sources */,
 				52C036442982D62900025F24 /* MovieDetail.swift in Sources */,
@@ -845,6 +959,8 @@
 				52C036BF2982D96B00025F24 /* BaseView.swift in Sources */,
 				52C036632982D78900025F24 /* UIViewController+Reactive.swift in Sources */,
 				52C036802982D81500025F24 /* PresenterInterface.swift in Sources */,
+				5D49C95A830E1E7DB6135142 /* MoviePresenter.swift in Sources */,
+				32838852062BC7567F7833AC /* MovieViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

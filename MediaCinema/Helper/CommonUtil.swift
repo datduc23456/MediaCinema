@@ -9,6 +9,14 @@ import Foundation
 import UIKit
 
 class CommonUtil {
+    static func getAppFontRegular(_ size: CGFloat) -> UIFont {
+        return UIFont.init(name: "Lato-Regular", size: size)!
+    }
+    
+    static func getAppFontBold(_ size: CGFloat) -> UIFont {
+        return UIFont.init(name: "Lato-Bold", size: size)!
+    }
+    
     static var SCREEN_WIDTH: CGFloat {
         return (AppDelegate.shared.window?.bounds.width)!
     }

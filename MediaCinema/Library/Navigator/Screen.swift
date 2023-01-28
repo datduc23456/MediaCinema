@@ -40,6 +40,7 @@ enum AppScreens: String, Screen, CaseIterable {
     case similar
     case setting
     case webView
+    case movie
     
     var path: String {
         return rawValue
@@ -99,6 +100,11 @@ enum AppScreens: String, Screen, CaseIterable {
 //        case .webView:
 //            return WebViewWireframe.generateModule(payload)
 //        }
-        return UIViewController()
+        switch self {
+        case .movie:
+            return MovieViewController(presenter: MoviePresenter())
+        default:
+            return UIViewController()
+        }
     }
 }
