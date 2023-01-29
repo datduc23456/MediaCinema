@@ -20,7 +20,7 @@ class TabbarItem: UIView {
         self.index = index
         self.selectedAction = selectedAction
         separatorView = UIView(frame: CGRect(x: 0, y: 0, width: frame.width, height: 3))
-        separatorView.backgroundColor = UIColor(hex: "#04D5E3")
+        separatorView.backgroundColor = APP_COLOR
         let imageView = UIImageView.init(image: UIImage(named: "ic_tabbar\(index+1)"))
         self.imageView = imageView
         
@@ -98,15 +98,13 @@ class TabbarViewController: UITabBarController {
         self.view.backgroundColor = .white
         self.viewControllers = listVc
         self.setupGradientTabbar()
-        var height: CGFloat = 10
-        if let safeAreaInsets = AppDelegate.shared.window?.safeAreaInsets.bottom, safeAreaInsets != 0 {
-            height = 0
-        }
+//        var height: CGFloat = 10
+//        if let safeAreaInsets = AppDelegate.shared.window?.safeAreaInsets.bottom, safeAreaInsets != 0 {
+//            height = 0
+//        }
         let stackView = UIStackView()
         stackView.axis = .horizontal
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.borderWidth = 1
-        stackView.borderColor = UIColor(hex: "#3F4249")
         stackView.backgroundColor = .white
         let frame = CGRect(x: 0, y: 0, width: (CommonUtil.SCREEN_WIDTH) / CGFloat(countVc), height: customTabbarHeight)
         self.view.addSubview(stackView)
@@ -128,7 +126,7 @@ class TabbarViewController: UITabBarController {
             self.items.append(tabbarItem)
         }
         
-        self.items[2].selectedAction()
+        self.items[0].selectedAction()
         
 //        for item in self.viewControllers ?? [] {
 //

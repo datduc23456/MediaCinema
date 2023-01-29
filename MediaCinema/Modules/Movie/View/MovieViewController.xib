@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieViewController" customModule="MediaCinema" customModuleProvider="target">
             <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="y2S-LW-4AE"/>
                 <outlet property="viewTest" destination="np3-28-47M" id="Thg-Cf-ZFr"/>
             </connections>
         </placeholder>
@@ -19,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="np3-28-47M">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="np3-28-47M" customClass="SegmentedView" customModule="MediaCinema" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>

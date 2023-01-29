@@ -4,6 +4,7 @@ PODS:
     - Charts/Core (= 4.1.0)
   - Charts/Core (4.1.0):
     - SwiftAlgorithms (~> 1.0)
+  - CollectionViewPagingLayout (1.1.0)
   - DZNEmptyDataSet (1.8.1)
   - FirebaseAnalytics (10.2.0):
     - FirebaseAnalytics/AdIdSupport (= 10.2.0)
@@ -158,6 +159,7 @@ PODS:
 
 DEPENDENCIES:
   - Charts
+  - CollectionViewPagingLayout
   - DZNEmptyDataSet
   - FirebaseAnalytics
   - FirebaseCrashlytics
@@ -178,6 +180,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - Charts
+    - CollectionViewPagingLayout
     - DZNEmptyDataSet
     - FirebaseAnalytics
     - FirebaseCore
@@ -209,6 +212,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   Charts: 354f86803d11d9c35de280587fef50d1af063978
+  CollectionViewPagingLayout: 2f8d50683bae57ca88f47fa4ab0195c9079582cf
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FirebaseAnalytics: 24a15e58e505abcedc3017b6f7c206fbfa964580
   FirebaseCore: 813838072b797b64f529f3c2ee35e696e5641dd1
@@ -237,6 +241,6 @@ SPEC CHECKSUMS:
   SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
   youtube-ios-player-helper: e9b97535e816db3152179d84d999bc1807ecd689
 
-PODFILE CHECKSUM: 5f109e151fb314e1a863a896fc4fde68e5a1434d
+PODFILE CHECKSUM: 26147a9ff05df3151d9cdb283eb9b85785e587c8
 
 COCOAPODS: 1.11.3

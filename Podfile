@@ -25,5 +25,6 @@ target 'MediaCinema' do
   pod 'FirebaseAnalytics'
   pod 'Google-Mobile-Ads-SDK'
   pod 'NVActivityIndicatorView'
+  pod 'CollectionViewPagingLayout'
   rxswift
 end

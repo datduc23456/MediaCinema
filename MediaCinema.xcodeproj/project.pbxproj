@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		32838852062BC7567F7833AC /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F0B95CB2D8DB05E18F5C7 /* MovieViewController.swift */; };
+		52660B0A2986A185001B672A /* SegmentedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52660B082986A185001B672A /* SegmentedCollectionViewCell.xib */; };
+		52660B0B2986A185001B672A /* SegmentedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52660B092986A185001B672A /* SegmentedCollectionViewCell.swift */; };
+		52660B0D2986A3D7001B672A /* SegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52660B0C2986A3D7001B672A /* SegmentedView.swift */; };
 		5269664D29844AED009C0F92 /* Lato-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269663B29844AEB009C0F92 /* Lato-SemiboldItalic.ttf */; };
 		5269664E29844AED009C0F92 /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269663C29844AEB009C0F92 /* Lato-Heavy.ttf */; };
 		5269664F29844AED009C0F92 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269663D29844AEB009C0F92 /* Lato-LightItalic.ttf */; };
@@ -146,6 +149,9 @@
 		022D1936DFED85992CFD1936 /* Pods-MediaCinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaCinema.release.xcconfig"; path = "Target Support Files/Pods-MediaCinema/Pods-MediaCinema.release.xcconfig"; sourceTree = "<group>"; };
 		0D896100313AB69C7BC65D31 /* MoviePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
 		458F0B95CB2D8DB05E18F5C7 /* MovieViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		52660B082986A185001B672A /* SegmentedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedCollectionViewCell.xib; sourceTree = "<group>"; };
+		52660B092986A185001B672A /* SegmentedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedCollectionViewCell.swift; sourceTree = "<group>"; };
+		52660B0C2986A3D7001B672A /* SegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedView.swift; sourceTree = "<group>"; };
 		5269663B29844AEB009C0F92 /* Lato-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		5269663C29844AEB009C0F92 /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy.ttf"; sourceTree = "<group>"; };
 		5269663D29844AEB009C0F92 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -294,6 +300,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52660B072986A15F001B672A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52660B092986A185001B672A /* SegmentedCollectionViewCell.swift */,
+				52660B082986A185001B672A /* SegmentedCollectionViewCell.xib */,
+				52660B0C2986A3D7001B672A /* SegmentedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		52C035EE2982D1BD00025F24 = {
 			isa = PBXGroup;
 			children = (
@@ -321,6 +337,7 @@
 				52C0364C2982D6B000025F24 /* Services */,
 				52C036512982D6F300025F24 /* Extension */,
 				52C0366C2982D7D200025F24 /* Library */,
+				52660B072986A15F001B672A /* Views */,
 				52C036872982D83B00025F24 /* Modules */,
 				52C036772982D81500025F24 /* VIPER */,
 				52C035FA2982D1BD00025F24 /* AppDelegate.swift */,
@@ -786,6 +803,7 @@
 				52C036252982D49D00025F24 /* seagull heavy bt.ttf in Resources */,
 				5269665329844AED009C0F92 /* Lato-Thin.ttf in Resources */,
 				5269665729844AED009C0F92 /* Lato-BoldItalic.ttf in Resources */,
+				52660B0A2986A185001B672A /* SegmentedCollectionViewCell.xib in Resources */,
 				52C0361F2982D49D00025F24 /* SeagullBoldItalic.ttf in Resources */,
 				5269665D29844AED009C0F92 /* Lato-BlackItalic.ttf in Resources */,
 				5269665129844AED009C0F92 /* Lato-Medium.ttf in Resources */,
@@ -886,6 +904,7 @@
 				52C036C12982D96B00025F24 /* NetworkMonitor.swift in Sources */,
 				52C036612982D78900025F24 /* Observable+Ext.swift in Sources */,
 				52C036B12982D96B00025F24 /* AppOpenAd.swift in Sources */,
+				52660B0D2986A3D7001B672A /* SegmentedView.swift in Sources */,
 				52C036852982D81500025F24 /* Progressable.swift in Sources */,
 				52C036682982D78900025F24 /* UIView+Ext.swift in Sources */,
 				52C036672982D78900025F24 /* UITableView+Ext.swift in Sources */,
@@ -910,6 +929,7 @@
 				52C036822982D81500025F24 /* ViewInterface.swift in Sources */,
 				52C036C82982D96B00025F24 /* BannerAdView.swift in Sources */,
 				52C036842982D81500025F24 /* ErrorHandleable.swift in Sources */,
+				52660B0B2986A185001B672A /* SegmentedCollectionViewCell.swift in Sources */,
 				52C036DA2982D9AC00025F24 /* BaseCollectionViewCell.swift in Sources */,
 				52C036B42982D96B00025F24 /* NativeAd.swift in Sources */,
 				52C036462982D64B00025F24 /* PersonResponse.swift in Sources */,
