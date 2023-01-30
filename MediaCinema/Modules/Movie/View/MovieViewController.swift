@@ -7,15 +7,17 @@
 //
 
 import UIKit
+import CollectionViewPagingLayout
 
-class MovieViewController: UIViewController, MovieViewProtocol {
+class MovieViewController: BaseViewController, MovieViewProtocol {
 
+    @IBOutlet weak var collectionViewBanner: UICollectionView!
     @IBOutlet weak var viewTest: UIView!
     var presenter: MoviePresenterProtocol
 
 	init(presenter: MoviePresenterProtocol) {
         self.presenter = presenter
-        super.init(nibName: "MovieViewController", bundle: nil)
+        super.init(nibName: MovieViewController.className, bundle: nil)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -24,14 +26,40 @@ class MovieViewController: UIViewController, MovieViewProtocol {
 
 	override func viewDidLoad() {
         super.viewDidLoad()
-
+        collectionViewBanner.registerCell(for: MovieBannerCollectionViewCell.className)
+        collectionViewBanner.delegate = self
+        collectionViewBanner.dataSource = self
+        collectionViewBanner.isPagingEnabled = true
+        collectionViewBanner.dataSource = self
+        let layout = CollectionViewPagingLayout()
+        collectionViewBanner.collectionViewLayout = layout
+        layout.delegate = self
+        collectionViewBanner.showsHorizontalScrollIndicator = false
+        collectionViewBanner.clipsToBounds = false
+        collectionViewBanner.backgroundColor = .clear
         presenter.view = self
         presenter.viewDidLoad()
-        
+        let navigation: MovieNavigationView = initCustomNavigation(.movie)
+        addGradientViewForBackground()
         
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        _ = viewTest.linearGradientBackground(angleInDegs: 180, colors: [UIColor(hex: "#B5ADE4").cgColor, UIColor(hex: "#1EB3CF").cgColor])
+        
     }
+}
+
+extension MovieViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MovieBannerCollectionViewCell.className, for: indexPath)
+        return cell
+    }
+}
+
+extension MovieViewController: CollectionViewPagingLayoutDelegate {
+    
 }

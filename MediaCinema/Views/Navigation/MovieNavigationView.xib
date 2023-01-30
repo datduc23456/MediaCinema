@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MovieNavigationView" customModule="MediaCinema" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iza-RB-MRr">
+                    <rect key="frame" x="16" y="15" width="78" height="29"/>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jaV-Zg-e3Z">
+                    <rect key="frame" x="293" y="8" width="110" height="36"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_setting" translatesAutoresizingMaskIntoConstraints="NO" id="nbE-Qo-zAb">
+                            <rect key="frame" x="15" y="6" width="24" height="24"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdK-5g-bFr">
+                            <rect key="frame" x="45" y="9.6666666666666679" width="43.333333333333343" height="17"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.074509803921568626" green="0.84313725490196079" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="nbE-Qo-zAb" firstAttribute="centerY" secondItem="jaV-Zg-e3Z" secondAttribute="centerY" id="9TM-lj-0HH"/>
+                        <constraint firstAttribute="width" constant="110" id="CKM-AT-EYx"/>
+                        <constraint firstItem="nbE-Qo-zAb" firstAttribute="leading" secondItem="jaV-Zg-e3Z" secondAttribute="leading" constant="15" id="Idk-NE-5md"/>
+                        <constraint firstItem="OdK-5g-bFr" firstAttribute="centerY" secondItem="jaV-Zg-e3Z" secondAttribute="centerY" id="a2E-xS-bXK"/>
+                        <constraint firstAttribute="height" constant="36" id="dVn-ZM-lWa"/>
+                        <constraint firstItem="OdK-5g-bFr" firstAttribute="leading" secondItem="nbE-Qo-zAb" secondAttribute="trailing" constant="6" id="doM-Mg-4qz"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jaV-Zg-e3Z" secondAttribute="bottom" id="LhY-cE-kfF"/>
+                <constraint firstAttribute="trailing" secondItem="jaV-Zg-e3Z" secondAttribute="trailing" constant="-10" id="V6x-73-Oi5"/>
+                <constraint firstItem="iza-RB-MRr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="ob7-n0-Bnf"/>
+                <constraint firstAttribute="bottom" secondItem="iza-RB-MRr" secondAttribute="bottom" id="rWh-4g-efv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-279.57746478873241"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_setting" width="24" height="24"/>
+    </resources>
+</document>

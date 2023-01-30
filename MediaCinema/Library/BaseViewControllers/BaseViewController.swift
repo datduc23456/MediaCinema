@@ -35,12 +35,12 @@ open class BaseViewController: UIViewController {
 //        initializePopGesture()
 //        handleDidFirstLayoutSubviews()
 //        handleViewWillLayoutSubviews {}
-        self.view.backgroundColor = APP_COLOR
-        viewGradientBottom = UIView()
-        gradient = CAGradientLayer()
-        gradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
-        gradient.locations = [0, 1]
-        viewGradientBottom.backgroundColor = APP_COLOR
+        self.view.backgroundColor = BACKGROUND_APP_COLOR
+//        viewGradientBottom = UIView()
+//        gradient = CAGradientLayer()
+//        gradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+//        gradient.locations = [0, 1]
+//        viewGradientBottom.backgroundColor = APP_COLOR
     }
     
     open override func viewWillAppear(_ animated: Bool) {
@@ -76,7 +76,7 @@ open class BaseViewController: UIViewController {
     open override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         if isFirstLayout {
-            viewGradientBottom.fadeView(style: .top, percentage: 0.45)
+//            viewGradientBottom.fadeView(style: .top, percentage: 0.45)
         }
     }
     
@@ -101,6 +101,10 @@ open class BaseViewController: UIViewController {
         let nav = NavigationBarView.initUsingAutoLayout(type, view: view) as! T
         myNavigationBar = nav
         return nav
+    }
+    
+    func addGradientViewForBackground() {
+        _ = view.linearGradientBackground(angleInDegs: 180, colors: [UIColor(hex: "#CE94F8").cgColor, UIColor(hex: "#1EB3CF").cgColor])
     }
 }
 

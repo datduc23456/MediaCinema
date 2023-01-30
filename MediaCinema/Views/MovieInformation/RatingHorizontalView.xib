@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="85" height="17"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bU3-tJ-Sep">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="17"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_star_small" translatesAutoresizingMaskIntoConstraints="NO" id="yzb-0z-6IU">
+                            <rect key="frame" x="0.0" y="0.0" width="12" height="17"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_star_small" translatesAutoresizingMaskIntoConstraints="NO" id="g39-S0-uHm">
+                            <rect key="frame" x="12" y="0.0" width="12" height="17"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_star_small" translatesAutoresizingMaskIntoConstraints="NO" id="x63-AG-Gxh">
+                            <rect key="frame" x="24" y="0.0" width="12" height="17"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_star_small" translatesAutoresizingMaskIntoConstraints="NO" id="bbd-qQ-gfG">
+                            <rect key="frame" x="36" y="0.0" width="12" height="17"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_star_small" translatesAutoresizingMaskIntoConstraints="NO" id="N00-Wy-JLZ">
+                            <rect key="frame" x="48" y="0.0" width="12" height="17"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="N00-Wy-JLZ" firstAttribute="width" secondItem="yzb-0z-6IU" secondAttribute="width" id="Syj-tP-dtg"/>
+                        <constraint firstItem="bbd-qQ-gfG" firstAttribute="width" secondItem="yzb-0z-6IU" secondAttribute="width" id="UfZ-27-xxA"/>
+                        <constraint firstItem="x63-AG-Gxh" firstAttribute="width" secondItem="yzb-0z-6IU" secondAttribute="width" id="Xgr-HK-DDF"/>
+                        <constraint firstItem="g39-S0-uHm" firstAttribute="width" secondItem="yzb-0z-6IU" secondAttribute="width" id="ryM-t1-OKr"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bfr-TV-17g">
+                    <rect key="frame" x="65.333333333333329" y="0.0" width="19.666666666666671" height="17"/>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Bfr-TV-17g" secondAttribute="trailing" id="C6y-W5-iJO"/>
+                <constraint firstItem="bU3-tJ-Sep" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WvH-km-cYn"/>
+                <constraint firstItem="bU3-tJ-Sep" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="otl-jg-UiT"/>
+                <constraint firstAttribute="bottom" secondItem="bU3-tJ-Sep" secondAttribute="bottom" id="uIJ-a4-8jg"/>
+                <constraint firstAttribute="bottom" secondItem="Bfr-TV-17g" secondAttribute="bottom" id="xL5-qW-7AC"/>
+                <constraint firstItem="Bfr-TV-17g" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ysH-S9-744"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-24" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_star_small" width="12" height="12"/>
+    </resources>
+</document>

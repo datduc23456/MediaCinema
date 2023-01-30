@@ -138,8 +138,27 @@
 		52C036F72982DBC600025F24 /* AYImageViewerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C036EF2982DBC600025F24 /* AYImageViewerAnimator.swift */; };
 		52C036F82982DBC600025F24 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C036F02982DBC600025F24 /* Style.swift */; };
 		52C036F92982DBC600025F24 /* AYImageViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C036F12982DBC600025F24 /* AYImageViewerViewController.xib */; };
-		52DD1C1029857B1400A1481A /* AVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD1C0E29857B1400A1481A /* AVCViewController.swift */; };
-		52DD1C1129857B1400A1481A /* AVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DD1C0F29857B1400A1481A /* AVCViewController.xib */; };
+		52DDDBF929880DCB00FB089E /* CHIBasePageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DDDBED29880DCB00FB089E /* CHIBasePageControl.swift */; };
+		52DDDBFA29880DCB00FB089E /* CHIPageControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DDDBEE29880DCB00FB089E /* CHIPageControllable.swift */; };
+		52DDDBFB29880DCB00FB089E /* CHILayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DDDBEF29880DCB00FB089E /* CHILayer.swift */; };
+		52DDDBFC29880DCB00FB089E /* CHIPageControlJalapeno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DDDBF029880DCB00FB089E /* CHIPageControlJalapeno.swift */; };
+		52DDDBFD29880DCB00FB089E /* CHIPageControlAleppo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DDDBF129880DCB00FB089E /* CHIPageControlAleppo.swift */; };
+		52DDDBFE29880DCB00FB089E /* CHIPageControlJaloro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DDDBF229880DCB00FB089E /* CHIPageControlJaloro.swift */; };
+		52DDDBFF29880DCB00FB089E /* CHIPageControlChimayo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DDDBF329880DCB00FB089E /* CHIPageControlChimayo.swift */; };
+		52DDDC0029880DCB00FB089E /* CHIPageControlPuya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DDDBF429880DCB00FB089E /* CHIPageControlPuya.swift */; };
+		52DDDC0129880DCB00FB089E /* CHIPageControlPaprika.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DDDBF529880DCB00FB089E /* CHIPageControlPaprika.swift */; };
+		52DDDC0229880DCB00FB089E /* CHIPageControlFresno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DDDBF629880DCB00FB089E /* CHIPageControlFresno.swift */; };
+		52DDDC0329880DCB00FB089E /* CHIPageControlAji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DDDBF729880DCB00FB089E /* CHIPageControlAji.swift */; };
+		52DDDC082988100100FB089E /* MovieNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DDDC072988100100FB089E /* MovieNavigationView.swift */; };
+		52DDDC0A2988101300FB089E /* MovieNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DDDC092988101300FB089E /* MovieNavigationView.xib */; };
+		52DDDC0D29881A3600FB089E /* MovieInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DDDC0C29881A3600FB089E /* MovieInformationView.xib */; };
+		52DDDC0F29881A3F00FB089E /* MovieInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DDDC0E29881A3F00FB089E /* MovieInformationView.swift */; };
+		52DDDC11298821D100FB089E /* RatingVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DDDC10298821D100FB089E /* RatingVerticalView.swift */; };
+		52DDDC13298821DE00FB089E /* RatingVerticalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DDDC12298821DE00FB089E /* RatingVerticalView.xib */; };
+		52DDDC152988234A00FB089E /* RatingHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DDDC142988234A00FB089E /* RatingHorizontalView.swift */; };
+		52DDDC172988236800FB089E /* RatingHorizontalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DDDC162988236800FB089E /* RatingHorizontalView.xib */; };
+		52DDDC1B2988298600FB089E /* MovieBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DDDC192988298600FB089E /* MovieBannerCollectionViewCell.swift */; };
+		52DDDC1C2988298600FB089E /* MovieBannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DDDC1A2988298600FB089E /* MovieBannerCollectionViewCell.xib */; };
 		5D49C95A830E1E7DB6135142 /* MoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D896100313AB69C7BC65D31 /* MoviePresenter.swift */; };
 		9D2334B1E1B1401C5A6C087E /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B24799E068ACA8816A095D6 /* MovieViewController.xib */; };
 		ECFCF6AD10CEB6F812F00166 /* Pods_MediaCinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE51344147AABCC65A0FB9E /* Pods_MediaCinema.framework */; };
@@ -281,8 +300,27 @@
 		52C036EF2982DBC600025F24 /* AYImageViewerAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYImageViewerAnimator.swift; sourceTree = "<group>"; };
 		52C036F02982DBC600025F24 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		52C036F12982DBC600025F24 /* AYImageViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AYImageViewerViewController.xib; sourceTree = "<group>"; };
-		52DD1C0E29857B1400A1481A /* AVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCViewController.swift; sourceTree = "<group>"; };
-		52DD1C0F29857B1400A1481A /* AVCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AVCViewController.xib; sourceTree = "<group>"; };
+		52DDDBED29880DCB00FB089E /* CHIBasePageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHIBasePageControl.swift; sourceTree = "<group>"; };
+		52DDDBEE29880DCB00FB089E /* CHIPageControllable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHIPageControllable.swift; sourceTree = "<group>"; };
+		52DDDBEF29880DCB00FB089E /* CHILayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHILayer.swift; sourceTree = "<group>"; };
+		52DDDBF029880DCB00FB089E /* CHIPageControlJalapeno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHIPageControlJalapeno.swift; sourceTree = "<group>"; };
+		52DDDBF129880DCB00FB089E /* CHIPageControlAleppo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHIPageControlAleppo.swift; sourceTree = "<group>"; };
+		52DDDBF229880DCB00FB089E /* CHIPageControlJaloro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHIPageControlJaloro.swift; sourceTree = "<group>"; };
+		52DDDBF329880DCB00FB089E /* CHIPageControlChimayo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHIPageControlChimayo.swift; sourceTree = "<group>"; };
+		52DDDBF429880DCB00FB089E /* CHIPageControlPuya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHIPageControlPuya.swift; sourceTree = "<group>"; };
+		52DDDBF529880DCB00FB089E /* CHIPageControlPaprika.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHIPageControlPaprika.swift; sourceTree = "<group>"; };
+		52DDDBF629880DCB00FB089E /* CHIPageControlFresno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHIPageControlFresno.swift; sourceTree = "<group>"; };
+		52DDDBF729880DCB00FB089E /* CHIPageControlAji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHIPageControlAji.swift; sourceTree = "<group>"; };
+		52DDDC072988100100FB089E /* MovieNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNavigationView.swift; sourceTree = "<group>"; };
+		52DDDC092988101300FB089E /* MovieNavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieNavigationView.xib; sourceTree = "<group>"; };
+		52DDDC0C29881A3600FB089E /* MovieInformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieInformationView.xib; sourceTree = "<group>"; };
+		52DDDC0E29881A3F00FB089E /* MovieInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInformationView.swift; sourceTree = "<group>"; };
+		52DDDC10298821D100FB089E /* RatingVerticalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingVerticalView.swift; sourceTree = "<group>"; };
+		52DDDC12298821DE00FB089E /* RatingVerticalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingVerticalView.xib; sourceTree = "<group>"; };
+		52DDDC142988234A00FB089E /* RatingHorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingHorizontalView.swift; sourceTree = "<group>"; };
+		52DDDC162988236800FB089E /* RatingHorizontalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingHorizontalView.xib; sourceTree = "<group>"; };
+		52DDDC192988298600FB089E /* MovieBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		52DDDC1A2988298600FB089E /* MovieBannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieBannerCollectionViewCell.xib; sourceTree = "<group>"; };
 		6B24799E068ACA8816A095D6 /* MovieViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
 		6CE51344147AABCC65A0FB9E /* Pods_MediaCinema.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaCinema.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49C597171245711D5B443C8 /* Pods-MediaCinema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaCinema.debug.xcconfig"; path = "Target Support Files/Pods-MediaCinema/Pods-MediaCinema.debug.xcconfig"; sourceTree = "<group>"; };
@@ -303,9 +341,9 @@
 		52660B072986A15F001B672A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				52660B092986A185001B672A /* SegmentedCollectionViewCell.swift */,
-				52660B082986A185001B672A /* SegmentedCollectionViewCell.xib */,
-				52660B0C2986A3D7001B672A /* SegmentedView.swift */,
+				52DDDC0B29881A1D00FB089E /* MovieInformation */,
+				52DDDC0629880F8500FB089E /* Navigation */,
+				52DDDC0529880F6F00FB089E /* Segmented */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -460,6 +498,7 @@
 		52C0366C2982D7D200025F24 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				52DDDBEA29880DCB00FB089E /* CHIPageControl */,
 				52C036E92982DBC600025F24 /* AYImageKit */,
 				52C036CB2982D9AC00025F24 /* BaseView */,
 				52C036882982D96B00025F24 /* AdMobManager */,
@@ -689,13 +728,79 @@
 			path = AYImageKit;
 			sourceTree = "<group>";
 		};
+		52DDDBEA29880DCB00FB089E /* CHIPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				52DDDBEC29880DCB00FB089E /* Core */,
+				52DDDBF029880DCB00FB089E /* CHIPageControlJalapeno.swift */,
+				52DDDBF129880DCB00FB089E /* CHIPageControlAleppo.swift */,
+				52DDDBF229880DCB00FB089E /* CHIPageControlJaloro.swift */,
+				52DDDBF329880DCB00FB089E /* CHIPageControlChimayo.swift */,
+				52DDDBF429880DCB00FB089E /* CHIPageControlPuya.swift */,
+				52DDDBF529880DCB00FB089E /* CHIPageControlPaprika.swift */,
+				52DDDBF629880DCB00FB089E /* CHIPageControlFresno.swift */,
+				52DDDBF729880DCB00FB089E /* CHIPageControlAji.swift */,
+			);
+			path = CHIPageControl;
+			sourceTree = "<group>";
+		};
+		52DDDBEC29880DCB00FB089E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				52DDDBED29880DCB00FB089E /* CHIBasePageControl.swift */,
+				52DDDBEE29880DCB00FB089E /* CHIPageControllable.swift */,
+				52DDDBEF29880DCB00FB089E /* CHILayer.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		52DDDC0529880F6F00FB089E /* Segmented */ = {
+			isa = PBXGroup;
+			children = (
+				52660B092986A185001B672A /* SegmentedCollectionViewCell.swift */,
+				52660B082986A185001B672A /* SegmentedCollectionViewCell.xib */,
+				52660B0C2986A3D7001B672A /* SegmentedView.swift */,
+			);
+			path = Segmented;
+			sourceTree = "<group>";
+		};
+		52DDDC0629880F8500FB089E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				52DDDC072988100100FB089E /* MovieNavigationView.swift */,
+				52DDDC092988101300FB089E /* MovieNavigationView.xib */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		52DDDC0B29881A1D00FB089E /* MovieInformation */ = {
+			isa = PBXGroup;
+			children = (
+				52DDDC0C29881A3600FB089E /* MovieInformationView.xib */,
+				52DDDC0E29881A3F00FB089E /* MovieInformationView.swift */,
+				52DDDC10298821D100FB089E /* RatingVerticalView.swift */,
+				52DDDC12298821DE00FB089E /* RatingVerticalView.xib */,
+				52DDDC142988234A00FB089E /* RatingHorizontalView.swift */,
+				52DDDC162988236800FB089E /* RatingHorizontalView.xib */,
+			);
+			path = MovieInformation;
+			sourceTree = "<group>";
+		};
+		52DDDC182988293E00FB089E /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				52DDDC192988298600FB089E /* MovieBannerCollectionViewCell.swift */,
+				52DDDC1A2988298600FB089E /* MovieBannerCollectionViewCell.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		58A8F53659CD3BFBC66DA6F8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				52DDDC182988293E00FB089E /* CollectionView */,
 				458F0B95CB2D8DB05E18F5C7 /* MovieViewController.swift */,
 				6B24799E068ACA8816A095D6 /* MovieViewController.xib */,
-				52DD1C0E29857B1400A1481A /* AVCViewController.swift */,
-				52DD1C0F29857B1400A1481A /* AVCViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -798,14 +903,18 @@
 				5269665C29844AED009C0F92 /* Lato-ThinItalic.ttf in Resources */,
 				52C036072982D1C000025F24 /* LaunchScreen.storyboard in Resources */,
 				5269665A29844AED009C0F92 /* Lato-HairlineItalic.ttf in Resources */,
+				52DDDC0A2988101300FB089E /* MovieNavigationView.xib in Resources */,
 				5269665B29844AED009C0F92 /* Lato-MediumItalic.ttf in Resources */,
 				52C036232982D49D00025F24 /* Nexa Bold.otf in Resources */,
+				52DDDC172988236800FB089E /* RatingHorizontalView.xib in Resources */,
 				52C036252982D49D00025F24 /* seagull heavy bt.ttf in Resources */,
 				5269665329844AED009C0F92 /* Lato-Thin.ttf in Resources */,
 				5269665729844AED009C0F92 /* Lato-BoldItalic.ttf in Resources */,
+				52DDDC0D29881A3600FB089E /* MovieInformationView.xib in Resources */,
 				52660B0A2986A185001B672A /* SegmentedCollectionViewCell.xib in Resources */,
 				52C0361F2982D49D00025F24 /* SeagullBoldItalic.ttf in Resources */,
 				5269665D29844AED009C0F92 /* Lato-BlackItalic.ttf in Resources */,
+				52DDDC13298821DE00FB089E /* RatingVerticalView.xib in Resources */,
 				5269665129844AED009C0F92 /* Lato-Medium.ttf in Resources */,
 				52C036242982D49D00025F24 /* SEAGULLH.ttf in Resources */,
 				5269665E29844AED009C0F92 /* Lato-Semibold.ttf in Resources */,
@@ -818,6 +927,7 @@
 				5269665629844AED009C0F92 /* Lato-Hairline.ttf in Resources */,
 				5269664F29844AED009C0F92 /* Lato-LightItalic.ttf in Resources */,
 				52C0362A2982D49D00025F24 /* SeagullItalic.ttf in Resources */,
+				52DDDC1C2988298600FB089E /* MovieBannerCollectionViewCell.xib in Resources */,
 				52C036C92982D96B00025F24 /* FullScreenNativeAdView.xib in Resources */,
 				52C036262982D49D00025F24 /* SeagullRegular.ttf in Resources */,
 				52C036222982D49D00025F24 /* seagullb.ttf in Resources */,
@@ -826,7 +936,6 @@
 				52C036C22982D96B00025F24 /* BigNativeAdView.xib in Resources */,
 				52C036212982D49D00025F24 /* seagull italic.ttf in Resources */,
 				52C036F92982DBC600025F24 /* AYImageViewerViewController.xib in Resources */,
-				52DD1C1129857B1400A1481A /* AVCViewController.xib in Resources */,
 				52C036C42982D96B00025F24 /* MediumNativeAdView.xib in Resources */,
 				5269665929844AED009C0F92 /* Lato-Light.ttf in Resources */,
 				52C036E82982DB1500025F24 /* TabbarVC.xib in Resources */,
@@ -899,8 +1008,11 @@
 				52C035FF2982D1BD00025F24 /* ViewController.swift in Sources */,
 				52C036BA2982D96B00025F24 /* BigNativeAdCollectionViewCell.swift in Sources */,
 				52C036372982D58600025F24 /* RealmUtils.swift in Sources */,
+				52DDDC11298821D100FB089E /* RatingVerticalView.swift in Sources */,
+				52DDDC082988100100FB089E /* MovieNavigationView.swift in Sources */,
 				52C036F42982DBC600025F24 /* Result.swift in Sources */,
 				52C036832982D81500025F24 /* WireframeInterface.swift in Sources */,
+				52DDDC1B2988298600FB089E /* MovieBannerCollectionViewCell.swift in Sources */,
 				52C036C12982D96B00025F24 /* NetworkMonitor.swift in Sources */,
 				52C036612982D78900025F24 /* Observable+Ext.swift in Sources */,
 				52C036B12982D96B00025F24 /* AppOpenAd.swift in Sources */,
@@ -909,14 +1021,16 @@
 				52C036682982D78900025F24 /* UIView+Ext.swift in Sources */,
 				52C036672982D78900025F24 /* UITableView+Ext.swift in Sources */,
 				52C0366A2982D78900025F24 /* Array+Ext.swift in Sources */,
-				52DD1C1029857B1400A1481A /* AVCViewController.swift in Sources */,
+				52DDDC0129880DCB00FB089E /* CHIPageControlPaprika.swift in Sources */,
 				52C036B62982D96B00025F24 /* UIColorExtension.swift in Sources */,
 				52C036D62982D9AC00025F24 /* BaseCollectionView.swift in Sources */,
+				52DDDBFA29880DCB00FB089E /* CHIPageControllable.swift in Sources */,
 				52C036442982D62900025F24 /* MovieDetail.swift in Sources */,
 				52C036B02982D96B00025F24 /* Constants.swift in Sources */,
 				52C036B52982D96B00025F24 /* InterstitialAd.swift in Sources */,
 				52C036D72982D9AC00025F24 /* CollectionViewFlowLayout.swift in Sources */,
 				52C036CA2982D96B00025F24 /* FullScreenNativeAdView.swift in Sources */,
+				52DDDC152988234A00FB089E /* RatingHorizontalView.swift in Sources */,
 				52C036E32982DA5B00025F24 /* Screen.swift in Sources */,
 				52C0365F2982D78900025F24 /* Int+Ext.swift in Sources */,
 				52C036B92982D96B00025F24 /* AdMobManager.swift in Sources */,
@@ -929,11 +1043,13 @@
 				52C036822982D81500025F24 /* ViewInterface.swift in Sources */,
 				52C036C82982D96B00025F24 /* BannerAdView.swift in Sources */,
 				52C036842982D81500025F24 /* ErrorHandleable.swift in Sources */,
+				52DDDC0029880DCB00FB089E /* CHIPageControlPuya.swift in Sources */,
 				52660B0B2986A185001B672A /* SegmentedCollectionViewCell.swift in Sources */,
 				52C036DA2982D9AC00025F24 /* BaseCollectionViewCell.swift in Sources */,
 				52C036B42982D96B00025F24 /* NativeAd.swift in Sources */,
 				52C036462982D64B00025F24 /* PersonResponse.swift in Sources */,
 				52C036742982D7EF00025F24 /* BaseViewController.swift in Sources */,
+				52DDDBF929880DCB00FB089E /* CHIBasePageControl.swift in Sources */,
 				52C036732982D7EF00025F24 /* BaseCollectionViewController.swift in Sources */,
 				52C036652982D78900025F24 /* ExtensionUseful.swift in Sources */,
 				52C036DD2982D9AC00025F24 /* ImageStackView.swift in Sources */,
@@ -950,18 +1066,24 @@
 				52C036C02982D96B00025F24 /* AdProtocol.swift in Sources */,
 				52C036622982D78900025F24 /* UICollectionView+Ext.swift in Sources */,
 				52C036C32982D96B00025F24 /* BigNativeAdView.swift in Sources */,
+				52DDDBFB29880DCB00FB089E /* CHILayer.swift in Sources */,
 				52C036402982D5F100025F24 /* Movie.swift in Sources */,
 				52C035FB2982D1BD00025F24 /* AppDelegate.swift in Sources */,
+				52DDDBFE29880DCB00FB089E /* CHIPageControlJaloro.swift in Sources */,
 				52C0364B2982D68500025F24 /* MovieDetailObject.swift in Sources */,
 				52C036B22982D96B00025F24 /* RewardedAd.swift in Sources */,
+				52DDDC0229880DCB00FB089E /* CHIPageControlFresno.swift in Sources */,
 				52C036DB2982D9AC00025F24 /* InsetLabel.swift in Sources */,
 				52C036602982D78900025F24 /* CGFloat+Ext.swift in Sources */,
 				52C036F22982DBC600025F24 /* AYImageView.swift in Sources */,
 				52C036482982D66400025F24 /* PeopleDetail.swift in Sources */,
+				52DDDBFF29880DCB00FB089E /* CHIPageControlChimayo.swift in Sources */,
+				52DDDC0329880DCB00FB089E /* CHIPageControlAji.swift in Sources */,
 				52C036502982D6E200025F24 /* ServiceCore.swift in Sources */,
 				52C036392982D5A000025F24 /* CoreTargetType.swift in Sources */,
 				52C036332982D54800025F24 /* CommonUtil.swift in Sources */,
 				52C036C52982D96B00025F24 /* MediumNativeAdView.swift in Sources */,
+				52DDDBFC29880DCB00FB089E /* CHIPageControlJalapeno.swift in Sources */,
 				52C036D82982D9AC00025F24 /* BaseCustomView.swift in Sources */,
 				52C036F72982DBC600025F24 /* AYImageViewerAnimator.swift in Sources */,
 				52C036BE2982D96B00025F24 /* BaseCollectionAdsViewCell.swift in Sources */,
@@ -974,8 +1096,10 @@
 				52C036812982D81500025F24 /* InteractorOutputInterface.swift in Sources */,
 				52C036D92982D9AC00025F24 /* NavigationBarView.swift in Sources */,
 				52C036642982D78900025F24 /* UITextField+Ext.swift in Sources */,
+				52DDDBFD29880DCB00FB089E /* CHIPageControlAleppo.swift in Sources */,
 				52C036352982D56300025F24 /* DTPBusiness.swift in Sources */,
 				52C036DC2982D9AC00025F24 /* BaseTableCollectionViewCell.swift in Sources */,
+				52DDDC0F29881A3F00FB089E /* MovieInformationView.swift in Sources */,
 				52C036BF2982D96B00025F24 /* BaseView.swift in Sources */,
 				52C036632982D78900025F24 /* UIViewController+Reactive.swift in Sources */,
 				52C036802982D81500025F24 /* PresenterInterface.swift in Sources */,

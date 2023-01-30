@@ -8,11 +8,19 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+        <array key="Nexa Regular.otf">
+            <string>NexaRegular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieViewController" customModule="MediaCinema" customModuleProvider="target">
             <connections>
+                <outlet property="collectionViewBanner" destination="Pfr-1J-xjR" id="gND-gt-JGp"/>
                 <outlet property="view" destination="iN0-l3-epB" id="y2S-LW-4AE"/>
-                <outlet property="viewTest" destination="np3-28-47M" id="Thg-Cf-ZFr"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -20,25 +28,93 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="np3-28-47M" customClass="SegmentedView" customModule="MediaCinema" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3su-2r-Hrx">
+                    <rect key="frame" x="16" y="16" width="343" height="36"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_search" translatesAutoresizingMaskIntoConstraints="NO" id="LkB-G8-ZcS">
+                            <rect key="frame" x="14" y="9" width="18" height="18"/>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QPB-me-bKv">
+                            <rect key="frame" x="40" y="-1" width="295" height="38"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="NexaRegular" family="NexaRegular" pointSize="12"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search movies, tv show,..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oB1-Cy-StE">
+                            <rect key="frame" x="40" y="9.5" width="156" height="17"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                            <color key="textColor" red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_clear_search" translatesAutoresizingMaskIntoConstraints="NO" id="v83-Jj-BMO">
+                            <rect key="frame" x="319" y="10" width="16" height="16"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="QPB-me-bKv" firstAttribute="top" secondItem="3su-2r-Hrx" secondAttribute="top" constant="-1" id="B34-1W-KLZ"/>
+                        <constraint firstItem="LkB-G8-ZcS" firstAttribute="leading" secondItem="3su-2r-Hrx" secondAttribute="leading" constant="14" id="NG8-Mp-glp"/>
+                        <constraint firstItem="QPB-me-bKv" firstAttribute="leading" secondItem="LkB-G8-ZcS" secondAttribute="trailing" constant="8" id="XWA-Sq-WoH"/>
+                        <constraint firstAttribute="bottom" secondItem="QPB-me-bKv" secondAttribute="bottom" constant="-1" id="Y01-Rr-GUh"/>
+                        <constraint firstAttribute="trailing" secondItem="v83-Jj-BMO" secondAttribute="trailing" constant="8" id="YiQ-ni-7dr"/>
+                        <constraint firstItem="LkB-G8-ZcS" firstAttribute="centerY" secondItem="3su-2r-Hrx" secondAttribute="centerY" id="hah-5p-pJK"/>
+                        <constraint firstAttribute="trailing" secondItem="QPB-me-bKv" secondAttribute="trailing" constant="8" id="ny4-lD-wkA"/>
+                        <constraint firstItem="oB1-Cy-StE" firstAttribute="centerY" secondItem="QPB-me-bKv" secondAttribute="centerY" id="sWN-rW-4bg"/>
+                        <constraint firstItem="v83-Jj-BMO" firstAttribute="centerY" secondItem="3su-2r-Hrx" secondAttribute="centerY" id="uSS-4v-3VQ"/>
+                        <constraint firstAttribute="height" constant="36" id="w4h-4e-888"/>
+                        <constraint firstItem="oB1-Cy-StE" firstAttribute="leading" secondItem="QPB-me-bKv" secondAttribute="leading" id="zap-7g-Cjr"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Pfr-1J-xjR">
+                    <rect key="frame" x="0.0" y="68" width="359" height="437"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="300" id="AQk-rd-ooB"/>
+                        <constraint firstAttribute="height" constant="437" id="cAT-Mn-IBi"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kCL-x9-fd5">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwe-So-U75" customClass="MovieInformationView" customModule="MediaCinema" customModuleProvider="target">
+                    <rect key="frame" x="16" y="495" width="343" height="90"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="V4b-kI-JP3"/>
                     </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="ztE-1i-5gx"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="ztE-1i-5gx" firstAttribute="trailing" secondItem="np3-28-47M" secondAttribute="trailing" id="YSv-wc-nqx"/>
-                <constraint firstItem="np3-28-47M" firstAttribute="leading" secondItem="ztE-1i-5gx" secondAttribute="leading" id="b7c-Ye-hvB"/>
-                <constraint firstItem="np3-28-47M" firstAttribute="top" secondItem="ztE-1i-5gx" secondAttribute="top" id="ypg-m8-bN8"/>
+                <constraint firstItem="3su-2r-Hrx" firstAttribute="top" secondItem="ztE-1i-5gx" secondAttribute="top" constant="16" id="2m7-Lr-0XV"/>
+                <constraint firstItem="Pfr-1J-xjR" firstAttribute="leading" secondItem="ztE-1i-5gx" secondAttribute="leading" id="6lA-zR-g0p"/>
+                <constraint firstItem="3su-2r-Hrx" firstAttribute="centerX" secondItem="ztE-1i-5gx" secondAttribute="centerX" id="IUT-2c-29J"/>
+                <constraint firstItem="3su-2r-Hrx" firstAttribute="leading" secondItem="ztE-1i-5gx" secondAttribute="leading" constant="16" id="IrR-fd-fMA"/>
+                <constraint firstItem="ztE-1i-5gx" firstAttribute="trailing" secondItem="dwe-So-U75" secondAttribute="trailing" constant="16" id="OWV-bh-scF"/>
+                <constraint firstItem="ztE-1i-5gx" firstAttribute="trailing" secondItem="Pfr-1J-xjR" secondAttribute="trailing" constant="16" id="SZC-4u-mQU"/>
+                <constraint firstItem="ztE-1i-5gx" firstAttribute="trailing" secondItem="3su-2r-Hrx" secondAttribute="trailing" constant="16" id="TYK-X6-dEN"/>
+                <constraint firstItem="Pfr-1J-xjR" firstAttribute="top" secondItem="3su-2r-Hrx" secondAttribute="bottom" constant="16" id="dgp-qY-FOW"/>
+                <constraint firstItem="dwe-So-U75" firstAttribute="leading" secondItem="ztE-1i-5gx" secondAttribute="leading" constant="16" id="k8Z-XB-nDC"/>
+                <constraint firstItem="Pfr-1J-xjR" firstAttribute="bottom" secondItem="dwe-So-U75" secondAttribute="top" constant="10" id="t95-JJ-jsP"/>
             </constraints>
             <point key="canvasLocation" x="132" y="-10"/>
         </view>
     </objects>
     <resources>
+        <image name="ic_clear_search" width="16" height="16"/>
+        <image name="ic_search" width="18" height="18"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
