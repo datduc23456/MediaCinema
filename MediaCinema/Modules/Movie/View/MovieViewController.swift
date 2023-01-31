@@ -11,8 +11,10 @@ import CollectionViewPagingLayout
 
 class MovieViewController: BaseViewController, MovieViewProtocol {
 
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var pageControl: CHIPageControlJaloro!
     @IBOutlet weak var collectionViewBanner: UICollectionView!
-    @IBOutlet weak var viewTest: UIView!
+
     var presenter: MoviePresenterProtocol
 
 	init(presenter: MoviePresenterProtocol) {
@@ -39,19 +41,20 @@ class MovieViewController: BaseViewController, MovieViewProtocol {
         collectionViewBanner.backgroundColor = .clear
         presenter.view = self
         presenter.viewDidLoad()
-        let navigation: MovieNavigationView = initCustomNavigation(.movie)
-        addGradientViewForBackground()
-        
+        pageControl.elementWidth = (CommonUtil.SCREEN_WIDTH - 32) / 5
+        let _: MovieNavigationView = initCustomNavigation(.movie)
+//        addGradientViewForBackground()
+        configView()
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        
+        addGradientViewForBackground()
     }
 }
 
 extension MovieViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -61,5 +64,7 @@ extension MovieViewController: UICollectionViewDataSource, UICollectionViewDeleg
 }
 
 extension MovieViewController: CollectionViewPagingLayoutDelegate {
-    
+    func onCurrentPageChanged(layout: CollectionViewPagingLayout, currentPage: Int) {
+        pageControl.progress = Double(currentPage)
+    }
 }

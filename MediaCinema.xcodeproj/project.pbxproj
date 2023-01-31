@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1841064C2988FC6A00A3A014 /* MovieViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841064B2988FC6A00A3A014 /* MovieViewController+Ext.swift */; };
 		32838852062BC7567F7833AC /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F0B95CB2D8DB05E18F5C7 /* MovieViewController.swift */; };
 		52660B0A2986A185001B672A /* SegmentedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52660B082986A185001B672A /* SegmentedCollectionViewCell.xib */; };
 		52660B0B2986A185001B672A /* SegmentedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52660B092986A185001B672A /* SegmentedCollectionViewCell.swift */; };
@@ -167,6 +168,7 @@
 /* Begin PBXFileReference section */
 		022D1936DFED85992CFD1936 /* Pods-MediaCinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaCinema.release.xcconfig"; path = "Target Support Files/Pods-MediaCinema/Pods-MediaCinema.release.xcconfig"; sourceTree = "<group>"; };
 		0D896100313AB69C7BC65D31 /* MoviePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
+		1841064B2988FC6A00A3A014 /* MovieViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieViewController+Ext.swift"; sourceTree = "<group>"; };
 		458F0B95CB2D8DB05E18F5C7 /* MovieViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		52660B082986A185001B672A /* SegmentedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedCollectionViewCell.xib; sourceTree = "<group>"; };
 		52660B092986A185001B672A /* SegmentedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -801,6 +803,7 @@
 				52DDDC182988293E00FB089E /* CollectionView */,
 				458F0B95CB2D8DB05E18F5C7 /* MovieViewController.swift */,
 				6B24799E068ACA8816A095D6 /* MovieViewController.xib */,
+				1841064B2988FC6A00A3A014 /* MovieViewController+Ext.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1053,6 +1056,7 @@
 				52C036732982D7EF00025F24 /* BaseCollectionViewController.swift in Sources */,
 				52C036652982D78900025F24 /* ExtensionUseful.swift in Sources */,
 				52C036DD2982D9AC00025F24 /* ImageStackView.swift in Sources */,
+				1841064C2988FC6A00A3A014 /* MovieViewController+Ext.swift in Sources */,
 				52C036F52982DBC600025F24 /* AYImageViewerViewController.swift in Sources */,
 				52C036BC2982D96B00025F24 /* SmallNativeAdCollectionViewCell.swift in Sources */,
 				52C036B32982D96B00025F24 /* RewardedInterstitialAd.swift in Sources */,

@@ -22,19 +22,19 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iza-RB-MRr">
-                    <rect key="frame" x="16" y="15" width="78" height="29"/>
+                    <rect key="frame" x="16" y="10" width="78" height="29"/>
                     <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jaV-Zg-e3Z">
-                    <rect key="frame" x="293" y="8" width="110" height="36"/>
+                    <rect key="frame" x="293" y="3" width="110" height="36"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_setting" translatesAutoresizingMaskIntoConstraints="NO" id="nbE-Qo-zAb">
                             <rect key="frame" x="15" y="6" width="24" height="24"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdK-5g-bFr">
-                            <rect key="frame" x="45" y="9.6666666666666679" width="43.333333333333343" height="17"/>
+                            <rect key="frame" x="45" y="9.6666666666666643" width="43.333333333333343" height="17"/>
                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -58,10 +58,10 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="jaV-Zg-e3Z" secondAttribute="bottom" id="LhY-cE-kfF"/>
+                <constraint firstAttribute="bottom" secondItem="jaV-Zg-e3Z" secondAttribute="bottom" constant="5" id="LhY-cE-kfF"/>
                 <constraint firstAttribute="trailing" secondItem="jaV-Zg-e3Z" secondAttribute="trailing" constant="-10" id="V6x-73-Oi5"/>
                 <constraint firstItem="iza-RB-MRr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="ob7-n0-Bnf"/>
-                <constraint firstAttribute="bottom" secondItem="iza-RB-MRr" secondAttribute="bottom" id="rWh-4g-efv"/>
+                <constraint firstAttribute="bottom" secondItem="iza-RB-MRr" secondAttribute="bottom" constant="5" id="rWh-4g-efv"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="130.53435114503816" y="-279.57746478873241"/>
