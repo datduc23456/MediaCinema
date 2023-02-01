@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: View -
 protocol MovieViewProtocol: AnyObject {
-
+    func getGenreListDone()
 }
 
 // MARK: Presenter -
@@ -31,7 +31,7 @@ class MoviePresenter: MoviePresenterProtocol {
         ServiceCore.shared.request(GenreResponse.self, targetType: CoreTargetType.genreList, successBlock: { [weak self] response in
             guard let `self` = self, let view = self.view else { return }
             DTPBusiness.shared.listGenres = response.genres
-            
+            view.getGenreListDone()
         }, failureBlock: { error in
             
         })

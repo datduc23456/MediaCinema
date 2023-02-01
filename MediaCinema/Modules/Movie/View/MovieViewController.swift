@@ -11,10 +11,12 @@ import CollectionViewPagingLayout
 
 class MovieViewController: BaseViewController, MovieViewProtocol {
 
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var pageControl: CHIPageControlJaloro!
     @IBOutlet weak var collectionViewBanner: UICollectionView!
-
+    
+    var segmentedView: SegmentedView!
     var presenter: MoviePresenterProtocol
 
 	init(presenter: MoviePresenterProtocol) {
@@ -47,6 +49,11 @@ class MovieViewController: BaseViewController, MovieViewProtocol {
         configView()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: AppDelegate.shared.appRootViewController.customTabbarHeight, right: 0)
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         addGradientViewForBackground()
     }

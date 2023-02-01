@@ -12,7 +12,8 @@ import Kingfisher
 class SegmentedCollectionViewCell: BaseCollectionViewCell {
     
     @IBOutlet weak var viewBackgroundImage: UIView!
-    @IBOutlet weak var image: UIImageView!
+    
+    @IBOutlet weak var viewSeparator: UIView!
     @IBOutlet weak var lbTitle: UILabel!
     
     var isHeightCalculated: Bool = false
@@ -27,11 +28,9 @@ class SegmentedCollectionViewCell: BaseCollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.contentView.addTapGestureRecognizer(action: {
-            if !self.isSelect, let genre = self.genre {
-                self.didTapAction?(genre)
-                self.isSelect = true
-            }
+        self.contentView.addTapGestureRecognizer(action: { [weak self] in
+            guard let `self` = self, let payload = self.payload else { return }
+            self.didTapAction?(payload)
         })
     }
     
@@ -40,10 +39,12 @@ class SegmentedCollectionViewCell: BaseCollectionViewCell {
     }
     
     override func configCell(_ payload: Any, isNeedFixedLayoutForIPad: Bool = false) {
+        self.payload = payload
         if let payload = payload as? Genre {
             self.genre = payload
             lbTitle.text = payload.name
-            image.image = UIImage(named: payload.name)
+        } else if let string = payload as? String {
+            lbTitle.text = string
         }
     }
     
@@ -58,18 +59,16 @@ class SegmentedCollectionViewCell: BaseCollectionViewCell {
     }
     
     func selected() {
-        DTPBusiness.shared.genreSelectedId = genre.id
-        viewBackgroundImage.backgroundColor = .white
-        image.tintColor = CHOOSE_GENRE_COLOR
+//        DTPBusiness.shared.genreSelectedId = genre.id
+        viewSeparator.isHidden = false
+        lbTitle.font = CommonUtil.getAppFontBold(14)
         lbTitle.textColor = .black
-        contentView.backgroundColor = CHOOSE_GENRE_COLOR
     }
     
     func unsected() {
-        viewBackgroundImage.backgroundColor = .black
-        image.tintColor = .white
-        lbTitle.textColor = .white
-        contentView.backgroundColor = CONTENT_CELL_COLOR
+        lbTitle.font = CommonUtil.getAppFontRegular(16)
+        viewSeparator.isHidden = true
+        lbTitle.textColor = UIColor(hex: "#909090")
     }
 }
 

@@ -21,6 +21,7 @@
             <connections>
                 <outlet property="collectionViewBanner" destination="Pfr-1J-xjR" id="gND-gt-JGp"/>
                 <outlet property="pageControl" destination="2Pw-1i-8ft" id="FBA-60-lXC"/>
+                <outlet property="scrollView" destination="sMf-1E-mvC" id="P3G-vP-yVo"/>
                 <outlet property="stackView" destination="Hhr-v5-IoL" id="8QJ-cC-qYm"/>
                 <outlet property="view" destination="iN0-l3-epB" id="y2S-LW-4AE"/>
             </connections>

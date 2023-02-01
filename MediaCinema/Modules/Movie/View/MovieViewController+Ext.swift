@@ -10,10 +10,16 @@ import SnapKit
 
 extension MovieViewController {
     func configView() {
-        let view = UIView()
-        view.snp.makeConstraints {
-            $0.height.equalTo(300)
+        segmentedView = SegmentedView()
+        segmentedView.snp.makeConstraints {
+            $0.height.equalTo(54)
         }
-        stackView.addArrangedSubview(view)
+        stackView.addArrangedSubview(segmentedView)
+    }
+    
+    func getGenreListDone() {
+        let genreList = DTPBusiness.shared.listGenres
+        segmentedView.dataSource = genreList.map({$0.name})
+        segmentedView.reloadData()
     }
 }

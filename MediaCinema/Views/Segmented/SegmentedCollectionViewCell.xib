@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -21,32 +22,50 @@
                 <rect key="frame" x="0.0" y="0.0" width="174" height="32"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All genres" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5N-ah-0Ne">
-                        <rect key="frame" x="16" y="9" width="142" height="14"/>
-                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
-                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PX0-jh-4nR">
-                        <rect key="frame" x="16" y="30" width="142" height="2"/>
-                        <color key="backgroundColor" red="0.015686274509803921" green="0.83529411764705885" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0Q-Yg-He9">
+                        <rect key="frame" x="0.0" y="0.0" width="174" height="32"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="daks;kdas;dk;á" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5N-ah-0Ne">
+                                <rect key="frame" x="20" y="9" width="134" height="14"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                <color key="textColor" red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PX0-jh-4nR">
+                                <rect key="frame" x="20" y="30" width="134" height="2"/>
+                                <color key="backgroundColor" red="0.015686274509803921" green="0.83529411764705885" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="pmo-r3-2AM"/>
+                                    <constraint firstAttribute="height" constant="2" id="vrW-pF-Q7w"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="2" id="vrW-pF-Q7w"/>
+                            <constraint firstItem="PX0-jh-4nR" firstAttribute="trailing" secondItem="K5N-ah-0Ne" secondAttribute="trailing" id="8Q3-kN-CEM"/>
+                            <constraint firstItem="K5N-ah-0Ne" firstAttribute="leading" secondItem="e0Q-Yg-He9" secondAttribute="leading" constant="20" id="Tic-hp-CnV"/>
+                            <constraint firstItem="K5N-ah-0Ne" firstAttribute="centerY" secondItem="e0Q-Yg-He9" secondAttribute="centerY" id="arm-YL-Eo8"/>
+                            <constraint firstAttribute="trailing" secondItem="K5N-ah-0Ne" secondAttribute="trailing" constant="20" id="dVC-H5-4Ta"/>
+                            <constraint firstItem="PX0-jh-4nR" firstAttribute="leading" secondItem="e0Q-Yg-He9" secondAttribute="leading" constant="20" symbolic="YES" id="iaj-X3-cQj"/>
+                            <constraint firstItem="PX0-jh-4nR" firstAttribute="leading" secondItem="K5N-ah-0Ne" secondAttribute="leading" id="oad-qY-wc3"/>
+                            <constraint firstItem="PX0-jh-4nR" firstAttribute="top" secondItem="K5N-ah-0Ne" secondAttribute="bottom" constant="7" id="uRx-nY-ruJ"/>
+                            <constraint firstAttribute="bottom" secondItem="PX0-jh-4nR" secondAttribute="bottom" id="yHs-qC-0pM"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8Q3-kN-CEM"/>
+                                <exclude reference="oad-qY-wc3"/>
+                            </mask>
+                        </variation>
                     </view>
                 </subviews>
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="PX0-jh-4nR" firstAttribute="leading" secondItem="K5N-ah-0Ne" secondAttribute="leading" id="8Cd-yu-uMC"/>
-                <constraint firstItem="PX0-jh-4nR" firstAttribute="trailing" secondItem="K5N-ah-0Ne" secondAttribute="trailing" id="HOP-eH-2gH"/>
-                <constraint firstAttribute="trailing" secondItem="K5N-ah-0Ne" secondAttribute="trailing" constant="16" id="OXK-gP-yry"/>
-                <constraint firstItem="K5N-ah-0Ne" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="S6J-Qt-i5j"/>
-                <constraint firstItem="K5N-ah-0Ne" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="U61-pV-MZx"/>
-                <constraint firstAttribute="bottom" secondItem="PX0-jh-4nR" secondAttribute="bottom" id="hvj-Zm-vJ3"/>
-                <constraint firstItem="K5N-ah-0Ne" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="9" id="mOb-Lz-hDc"/>
-                <constraint firstItem="PX0-jh-4nR" firstAttribute="top" secondItem="K5N-ah-0Ne" secondAttribute="bottom" constant="7" id="pPw-H0-QD2"/>
-                <constraint firstItem="K5N-ah-0Ne" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="siY-Qb-EKt"/>
+                <constraint firstItem="e0Q-Yg-He9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GYh-PI-yHP"/>
+                <constraint firstItem="e0Q-Yg-He9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dH4-my-crj"/>
+                <constraint firstAttribute="trailing" secondItem="e0Q-Yg-He9" secondAttribute="trailing" id="fiY-fn-0BY"/>
+                <constraint firstAttribute="bottom" secondItem="e0Q-Yg-He9" secondAttribute="bottom" id="ghK-PJ-zUi"/>
             </constraints>
             <size key="customSize" width="174" height="205"/>
             <userDefinedRuntimeAttributes>
@@ -62,8 +81,14 @@
             </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="lbTitle" destination="K5N-ah-0Ne" id="kMg-ob-VBX"/>
+                <outlet property="viewSeparator" destination="PX0-jh-4nR" id="TZa-X1-g0l"/>
             </connections>
             <point key="canvasLocation" x="212.30769230769229" y="42.654028436018955"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
