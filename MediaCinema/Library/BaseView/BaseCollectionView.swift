@@ -18,7 +18,7 @@ protocol FactoryUICollectionView {
 
 extension FactoryUICollectionView where Self: BaseCollectionView {
     static func createWith<T: UICollectionViewCell>(_ type: T.Type) -> Self {
-        let collectionView = BaseCollectionView(frame: CGRect.init(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: UICollectionViewLayout())
+        let collectionView = BaseCollectionView(frame: CGRect.init(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.registerCell(for: T.className)
         return collectionView as! Self
     }
@@ -96,7 +96,7 @@ class BaseCollectionView: UICollectionView {
     }
     override func reloadData() {
         super.reloadData()
-        self.invalidateIntrinsicContentSize()
+//        self.invalidateIntrinsicContentSize()
     }
     
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {

@@ -20,6 +20,5 @@ extension MovieViewController {
     func getGenreListDone() {
         let genreList = DTPBusiness.shared.listGenres
         segmentedView.dataSource = genreList.map({$0.name})
-        segmentedView.reloadData()
     }
 }

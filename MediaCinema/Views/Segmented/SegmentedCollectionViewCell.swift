@@ -61,12 +61,12 @@ class SegmentedCollectionViewCell: BaseCollectionViewCell {
     func selected() {
 //        DTPBusiness.shared.genreSelectedId = genre.id
         viewSeparator.isHidden = false
-        lbTitle.font = CommonUtil.getAppFontBold(14)
+//        lbTitle.font = CommonUtil.getAppFontBold(14)
         lbTitle.textColor = .black
     }
     
     func unsected() {
-        lbTitle.font = CommonUtil.getAppFontRegular(16)
+//        lbTitle.font = CommonUtil.getAppFontRegular(16)
         viewSeparator.isHidden = true
         lbTitle.textColor = UIColor(hex: "#909090")
     }

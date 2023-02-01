@@ -10,7 +10,11 @@ import UIKit
 class SegmentedView: UIView {
     
     var collectionView: BaseCollectionView!
-    var dataSource: [String] = []
+    var dataSource: [String] = [] {
+        didSet {
+            reloadData()
+        }
+    }
     var selectedIndex: Int = 0
     
     override func awakeFromNib() {
@@ -28,32 +32,32 @@ class SegmentedView: UIView {
     }
     
     func commonInit() {
-        collectionView = BaseCollectionView.createWith(SegmentedCollectionViewCell.self)
-        collectionView.bounces = false
-        self.addSubview(collectionView)
-        collectionView.snp.makeConstraints {
-            $0.top.leading.trailing.equalTo(self)
-            $0.height.equalTo(54)
-        }
-        collectionView.dataSource = self
-        collectionView.delegate = self
-        let collectionViewFlowLayout = UICollectionViewFlowLayout()
-        collectionViewFlowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        let collectionViewFlowLayout = CollectionViewFlowLayout()
+        collectionViewFlowLayout.estimatedItemSize = CGSize(width: 100, height: 54)
         collectionViewFlowLayout.minimumLineSpacing = 8
         collectionViewFlowLayout.headerReferenceSize = CGSize(width: 16, height: 1)
         collectionViewFlowLayout.scrollDirection = .horizontal
-        collectionView.collectionViewLayout = collectionViewFlowLayout
-        collectionView.collectionViewLayout.invalidateLayout()
-        collectionView.reloadData()
+        collectionView = BaseCollectionView(frame: CGRect.init(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: collectionViewFlowLayout)
+        collectionView.registerCell(for: SegmentedCollectionViewCell.className)
+//        collectionView.bounces = false
+        self.addSubview(collectionView)
+        collectionView.snp.makeConstraints {
+            $0.top.leading.trailing.bottom.equalTo(self)
+//            $0.height.equalTo(54)
+        }
+        
+        
+//        collectionView.collectionViewLayout = collectionViewFlowLayout
+        collectionView.dataSource = self
+        collectionView.delegate = self
     }
     
     func reloadData() {
-        collectionView.collectionViewLayout.invalidateLayout()
         collectionView.reloadData()
     }
 }
 
-extension SegmentedView: UICollectionViewDataSource, UICollectionViewDelegate {
+extension SegmentedView: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataSource.count
@@ -74,5 +78,10 @@ extension SegmentedView: UICollectionViewDataSource, UICollectionViewDelegate {
             cell.selected()
         }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let title = dataSource[indexPath.row]
+        return CGSize(width: title.estimateWidth(withConstrainedHeight: 44, font: CommonUtil.getAppFontRegular(16)) + 16, height: 44)
     }
 }

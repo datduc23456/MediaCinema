@@ -30,6 +30,7 @@
 		5269665C29844AED009C0F92 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269664A29844AED009C0F92 /* Lato-ThinItalic.ttf */; };
 		5269665D29844AED009C0F92 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269664B29844AED009C0F92 /* Lato-BlackItalic.ttf */; };
 		5269665E29844AED009C0F92 /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5269664C29844AED009C0F92 /* Lato-Semibold.ttf */; };
+		52BD91E7298AC872007E23DF /* HorizontalCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD91E6298AC872007E23DF /* HorizontalCollectionViewFlowLayout.swift */; };
 		52C035FB2982D1BD00025F24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C035FA2982D1BD00025F24 /* AppDelegate.swift */; };
 		52C035FF2982D1BD00025F24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C035FE2982D1BD00025F24 /* ViewController.swift */; };
 		52C036022982D1BD00025F24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C036002982D1BD00025F24 /* Main.storyboard */; };
@@ -191,6 +192,7 @@
 		5269664A29844AED009C0F92 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
 		5269664B29844AED009C0F92 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
 		5269664C29844AED009C0F92 /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
+		52BD91E6298AC872007E23DF /* HorizontalCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		52C035F72982D1BD00025F24 /* MediaCinema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaCinema.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C035FA2982D1BD00025F24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52C035FE2982D1BD00025F24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -702,6 +704,7 @@
 				52C036D32982D9AC00025F24 /* ImageStackView.swift */,
 				52C036D42982D9AC00025F24 /* ScaledHeightImageView.swift */,
 				52C036D52982D9AC00025F24 /* TableViewAdjustedHeight.swift */,
+				52BD91E6298AC872007E23DF /* HorizontalCollectionViewFlowLayout.swift */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -1097,6 +1100,7 @@
 				52C036862982D81500025F24 /* InteractorInterface.swift in Sources */,
 				52C036BB2982D96B00025F24 /* MediumNativeAdCollectionViewCell.swift in Sources */,
 				52C036B82982D96B00025F24 /* UICollectionViewExtension.swift in Sources */,
+				52BD91E7298AC872007E23DF /* HorizontalCollectionViewFlowLayout.swift in Sources */,
 				52C036812982D81500025F24 /* InteractorOutputInterface.swift in Sources */,
 				52C036D92982D9AC00025F24 /* NavigationBarView.swift in Sources */,
 				52C036642982D78900025F24 /* UITextField+Ext.swift in Sources */,

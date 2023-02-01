@@ -26,16 +26,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="174" height="32"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="daks;kdas;dk;á" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5N-ah-0Ne">
-                                <rect key="frame" x="20" y="9" width="134" height="14"/>
+                                <rect key="frame" x="8" y="6.3333333333333339" width="158" height="19.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                 <color key="textColor" red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PX0-jh-4nR">
-                                <rect key="frame" x="20" y="30" width="134" height="2"/>
+                                <rect key="frame" x="8" y="30" width="158" height="2"/>
                                 <color key="backgroundColor" red="0.015686274509803921" green="0.83529411764705885" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="134" id="pmo-r3-2AM"/>
                                     <constraint firstAttribute="height" constant="2" id="vrW-pF-Q7w"/>
                                 </constraints>
                             </view>
@@ -43,20 +42,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="PX0-jh-4nR" firstAttribute="trailing" secondItem="K5N-ah-0Ne" secondAttribute="trailing" id="8Q3-kN-CEM"/>
-                            <constraint firstItem="K5N-ah-0Ne" firstAttribute="leading" secondItem="e0Q-Yg-He9" secondAttribute="leading" constant="20" id="Tic-hp-CnV"/>
+                            <constraint firstItem="K5N-ah-0Ne" firstAttribute="leading" secondItem="e0Q-Yg-He9" secondAttribute="leading" constant="8" id="Tic-hp-CnV"/>
                             <constraint firstItem="K5N-ah-0Ne" firstAttribute="centerY" secondItem="e0Q-Yg-He9" secondAttribute="centerY" id="arm-YL-Eo8"/>
-                            <constraint firstAttribute="trailing" secondItem="K5N-ah-0Ne" secondAttribute="trailing" constant="20" id="dVC-H5-4Ta"/>
-                            <constraint firstItem="PX0-jh-4nR" firstAttribute="leading" secondItem="e0Q-Yg-He9" secondAttribute="leading" constant="20" symbolic="YES" id="iaj-X3-cQj"/>
+                            <constraint firstAttribute="trailing" secondItem="K5N-ah-0Ne" secondAttribute="trailing" constant="8" id="dVC-H5-4Ta"/>
                             <constraint firstItem="PX0-jh-4nR" firstAttribute="leading" secondItem="K5N-ah-0Ne" secondAttribute="leading" id="oad-qY-wc3"/>
-                            <constraint firstItem="PX0-jh-4nR" firstAttribute="top" secondItem="K5N-ah-0Ne" secondAttribute="bottom" constant="7" id="uRx-nY-ruJ"/>
                             <constraint firstAttribute="bottom" secondItem="PX0-jh-4nR" secondAttribute="bottom" id="yHs-qC-0pM"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="8Q3-kN-CEM"/>
-                                <exclude reference="oad-qY-wc3"/>
-                            </mask>
-                        </variation>
                     </view>
                 </subviews>
             </view>
