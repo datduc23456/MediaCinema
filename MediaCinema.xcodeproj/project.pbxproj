@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1841064C2988FC6A00A3A014 /* MovieViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841064B2988FC6A00A3A014 /* MovieViewController+Ext.swift */; };
+		18C4B074298B9DB2005B92AF /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4B072298B9DB2005B92AF /* MovieCollectionViewCell.swift */; };
+		18C4B075298B9DB2005B92AF /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C4B073298B9DB2005B92AF /* MovieCollectionViewCell.xib */; };
+		18C4B078298BA031005B92AF /* TopRatingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C4B076298BA030005B92AF /* TopRatingCollectionViewCell.xib */; };
+		18C4B079298BA031005B92AF /* TopRatingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4B077298BA030005B92AF /* TopRatingCollectionViewCell.swift */; };
 		32838852062BC7567F7833AC /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F0B95CB2D8DB05E18F5C7 /* MovieViewController.swift */; };
 		52660B0A2986A185001B672A /* SegmentedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52660B082986A185001B672A /* SegmentedCollectionViewCell.xib */; };
 		52660B0B2986A185001B672A /* SegmentedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52660B092986A185001B672A /* SegmentedCollectionViewCell.swift */; };
@@ -170,6 +174,10 @@
 		022D1936DFED85992CFD1936 /* Pods-MediaCinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaCinema.release.xcconfig"; path = "Target Support Files/Pods-MediaCinema/Pods-MediaCinema.release.xcconfig"; sourceTree = "<group>"; };
 		0D896100313AB69C7BC65D31 /* MoviePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
 		1841064B2988FC6A00A3A014 /* MovieViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieViewController+Ext.swift"; sourceTree = "<group>"; };
+		18C4B072298B9DB2005B92AF /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		18C4B073298B9DB2005B92AF /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
+		18C4B076298BA030005B92AF /* TopRatingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopRatingCollectionViewCell.xib; sourceTree = "<group>"; };
+		18C4B077298BA030005B92AF /* TopRatingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopRatingCollectionViewCell.swift; sourceTree = "<group>"; };
 		458F0B95CB2D8DB05E18F5C7 /* MovieViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		52660B082986A185001B672A /* SegmentedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedCollectionViewCell.xib; sourceTree = "<group>"; };
 		52660B092986A185001B672A /* SegmentedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -796,6 +804,10 @@
 			children = (
 				52DDDC192988298600FB089E /* MovieBannerCollectionViewCell.swift */,
 				52DDDC1A2988298600FB089E /* MovieBannerCollectionViewCell.xib */,
+				18C4B072298B9DB2005B92AF /* MovieCollectionViewCell.swift */,
+				18C4B073298B9DB2005B92AF /* MovieCollectionViewCell.xib */,
+				18C4B077298BA030005B92AF /* TopRatingCollectionViewCell.swift */,
+				18C4B076298BA030005B92AF /* TopRatingCollectionViewCell.xib */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -919,6 +931,7 @@
 				52DDDC0D29881A3600FB089E /* MovieInformationView.xib in Resources */,
 				52660B0A2986A185001B672A /* SegmentedCollectionViewCell.xib in Resources */,
 				52C0361F2982D49D00025F24 /* SeagullBoldItalic.ttf in Resources */,
+				18C4B078298BA031005B92AF /* TopRatingCollectionViewCell.xib in Resources */,
 				5269665D29844AED009C0F92 /* Lato-BlackItalic.ttf in Resources */,
 				52DDDC13298821DE00FB089E /* RatingVerticalView.xib in Resources */,
 				5269665129844AED009C0F92 /* Lato-Medium.ttf in Resources */,
@@ -936,6 +949,7 @@
 				52DDDC1C2988298600FB089E /* MovieBannerCollectionViewCell.xib in Resources */,
 				52C036C92982D96B00025F24 /* FullScreenNativeAdView.xib in Resources */,
 				52C036262982D49D00025F24 /* SeagullRegular.ttf in Resources */,
+				18C4B075298B9DB2005B92AF /* MovieCollectionViewCell.xib in Resources */,
 				52C036222982D49D00025F24 /* seagullb.ttf in Resources */,
 				52C0362B2982D49D00025F24 /* seagull bold.ttf in Resources */,
 				52C036042982D1BF00025F24 /* Assets.xcassets in Resources */,
@@ -1013,6 +1027,7 @@
 				52C0363E2982D5E500025F24 /* BaseModel.swift in Sources */,
 				52C035FF2982D1BD00025F24 /* ViewController.swift in Sources */,
 				52C036BA2982D96B00025F24 /* BigNativeAdCollectionViewCell.swift in Sources */,
+				18C4B074298B9DB2005B92AF /* MovieCollectionViewCell.swift in Sources */,
 				52C036372982D58600025F24 /* RealmUtils.swift in Sources */,
 				52DDDC11298821D100FB089E /* RatingVerticalView.swift in Sources */,
 				52DDDC082988100100FB089E /* MovieNavigationView.swift in Sources */,
@@ -1079,6 +1094,7 @@
 				52DDDBFE29880DCB00FB089E /* CHIPageControlJaloro.swift in Sources */,
 				52C0364B2982D68500025F24 /* MovieDetailObject.swift in Sources */,
 				52C036B22982D96B00025F24 /* RewardedAd.swift in Sources */,
+				18C4B079298BA031005B92AF /* TopRatingCollectionViewCell.swift in Sources */,
 				52DDDC0229880DCB00FB089E /* CHIPageControlFresno.swift in Sources */,
 				52C036DB2982D9AC00025F24 /* InsetLabel.swift in Sources */,
 				52C036602982D78900025F24 /* CGFloat+Ext.swift in Sources */,
