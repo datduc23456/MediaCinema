@@ -13,6 +13,8 @@ class MovieBannerCollectionViewCell: UICollectionViewCell, StackTransformView {
         var options = StackTransformViewOptions.layout(.perspective)
         options.blurEffectEnabled = true
         options.blurEffectStyle = .light
+        options.alphaFactor = 0.4
+//        options.stackPosition = CGPoint(x: 0, y: 1)
         return options
     }
     

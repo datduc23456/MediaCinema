@@ -35,7 +35,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJx-3i-iaP">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="829"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="626"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3su-2r-Hrx">
                                     <rect key="frame" x="16" y="16" width="343" height="36"/>
@@ -104,7 +104,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Pw-1i-8ft" customClass="CHIPageControlJaloro" customModule="MediaCinema" customModuleProvider="target">
-                                    <rect key="frame" x="16" y="611" width="343" height="2"/>
+                                    <rect key="frame" x="16" y="607" width="343" height="2"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="2" id="lLe-TB-SEz"/>
@@ -133,27 +133,47 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hhr-v5-IoL">
-                                    <rect key="frame" x="0.0" y="629" width="375" height="200"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Opi-8u-J2v">
+                                    <rect key="frame" x="0.0" y="626" width="375" height="0.0"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hhr-v5-IoL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" priority="250" constant="300" id="V2S-bS-mPc"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="V2S-bS-mPc"/>
+                                                </mask>
+                                            </variation>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" priority="750" constant="200" id="V2S-bS-mPc"/>
+                                        <constraint firstAttribute="bottom" secondItem="Hhr-v5-IoL" secondAttribute="bottom" id="I34-38-HD4"/>
+                                        <constraint firstAttribute="trailing" secondItem="Hhr-v5-IoL" secondAttribute="trailing" id="QQl-Kc-GJ5"/>
+                                        <constraint firstItem="Hhr-v5-IoL" firstAttribute="leading" secondItem="Opi-8u-J2v" secondAttribute="leading" id="Qxf-cb-g7u"/>
+                                        <constraint firstItem="Hhr-v5-IoL" firstAttribute="top" secondItem="Opi-8u-J2v" secondAttribute="top" id="w2T-KR-Ckb"/>
                                     </constraints>
-                                </stackView>
+                                </view>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
+                                <constraint firstItem="Opi-8u-J2v" firstAttribute="top" secondItem="2Pw-1i-8ft" secondAttribute="bottom" constant="17" id="1N9-Vi-CYG"/>
                                 <constraint firstAttribute="trailing" secondItem="Pfr-1J-xjR" secondAttribute="trailing" constant="16" id="26c-jS-F5U"/>
-                                <constraint firstAttribute="bottom" secondItem="Hhr-v5-IoL" secondAttribute="bottom" id="6q0-3f-F2F"/>
-                                <constraint firstItem="Hhr-v5-IoL" firstAttribute="top" secondItem="2Pw-1i-8ft" secondAttribute="bottom" constant="16" id="DVZ-Gm-CKu"/>
+                                <constraint firstAttribute="height" priority="750" constant="500" id="3Qf-kv-HtW"/>
+                                <constraint firstItem="Opi-8u-J2v" firstAttribute="leading" secondItem="OJx-3i-iaP" secondAttribute="leading" id="8pG-pp-tLh"/>
                                 <constraint firstItem="3su-2r-Hrx" firstAttribute="leading" secondItem="OJx-3i-iaP" secondAttribute="leading" constant="16" id="E7k-Zc-ja1"/>
                                 <constraint firstItem="dwe-So-U75" firstAttribute="leading" secondItem="OJx-3i-iaP" secondAttribute="leading" constant="16" id="LKF-9T-28X"/>
                                 <constraint firstItem="Pfr-1J-xjR" firstAttribute="leading" secondItem="OJx-3i-iaP" secondAttribute="leading" constant="16" id="Pfa-ly-BYG"/>
+                                <constraint firstAttribute="trailing" secondItem="Opi-8u-J2v" secondAttribute="trailing" id="aml-8w-OdK"/>
                                 <constraint firstAttribute="trailing" secondItem="3su-2r-Hrx" secondAttribute="trailing" constant="16" id="bVT-eH-jfW"/>
                                 <constraint firstItem="3su-2r-Hrx" firstAttribute="top" secondItem="OJx-3i-iaP" secondAttribute="top" constant="16" id="du6-jq-6Pw"/>
                                 <constraint firstItem="2Pw-1i-8ft" firstAttribute="leading" secondItem="OJx-3i-iaP" secondAttribute="leading" constant="16" id="j44-wn-bDF"/>
+                                <constraint firstAttribute="bottom" secondItem="Opi-8u-J2v" secondAttribute="bottom" id="md9-rA-nIR"/>
                                 <constraint firstItem="dwe-So-U75" firstAttribute="top" secondItem="Pfr-1J-xjR" secondAttribute="bottom" id="pnr-U2-Rcr"/>
                                 <constraint firstItem="Pfr-1J-xjR" firstAttribute="top" secondItem="3su-2r-Hrx" secondAttribute="bottom" constant="16" id="qlf-OY-DdI"/>
-                                <constraint firstItem="2Pw-1i-8ft" firstAttribute="top" secondItem="dwe-So-U75" secondAttribute="bottom" constant="16" id="rBe-bP-vZX"/>
+                                <constraint firstItem="2Pw-1i-8ft" firstAttribute="top" secondItem="dwe-So-U75" secondAttribute="bottom" constant="12" id="rBe-bP-vZX"/>
                                 <constraint firstAttribute="height" priority="750" constant="500" id="vkq-om-1QW"/>
                                 <constraint firstAttribute="trailing" secondItem="dwe-So-U75" secondAttribute="trailing" constant="16" id="wp4-1X-Fci"/>
                                 <constraint firstAttribute="trailing" secondItem="2Pw-1i-8ft" secondAttribute="trailing" constant="16" id="xql-YM-9Cp"/>
@@ -178,17 +198,20 @@
             <viewLayoutGuide key="safeArea" id="OJy-7f-uil"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Hhr-v5-IoL" firstAttribute="leading" secondItem="OJy-7f-uil" secondAttribute="leading" id="4dZ-B3-lqe"/>
                 <constraint firstItem="sMf-1E-mvC" firstAttribute="top" secondItem="OJy-7f-uil" secondAttribute="top" id="DIJ-os-ny4"/>
                 <constraint firstAttribute="trailing" secondItem="sMf-1E-mvC" secondAttribute="trailing" id="LPm-ZF-Eb7"/>
                 <constraint firstItem="OJx-3i-iaP" firstAttribute="width" secondItem="OJy-7f-uil" secondAttribute="width" id="Lhb-wF-m9A"/>
                 <constraint firstItem="OJy-7f-uil" firstAttribute="bottom" secondItem="sMf-1E-mvC" secondAttribute="bottom" id="UcS-C5-1M2"/>
                 <constraint firstItem="sMf-1E-mvC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gzP-KO-eDm"/>
-                <constraint firstItem="OJy-7f-uil" firstAttribute="trailing" secondItem="Hhr-v5-IoL" secondAttribute="trailing" id="vrj-o1-wUt"/>
             </constraints>
             <point key="canvasLocation" x="132" y="-10"/>
         </view>
     </objects>
+    <designables>
+        <designable name="2Pw-1i-8ft">
+            <size key="intrinsicContentSize" width="50" height="2"/>
+        </designable>
+    </designables>
     <resources>
         <image name="ic_clear_search" width="16" height="16"/>
         <image name="ic_search" width="18" height="18"/>

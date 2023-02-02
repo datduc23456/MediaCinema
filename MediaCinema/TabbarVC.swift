@@ -19,7 +19,7 @@ class TabbarItem: UIView {
         super.init(frame: frame)
         self.index = index
         self.selectedAction = selectedAction
-        separatorView = UIView(frame: CGRect(x: 0, y: 0, width: frame.width, height: 3))
+        separatorView = UIView(frame: CGRect(x: 0, y: 0, width: frame.width, height: 2))
         separatorView.backgroundColor = APP_COLOR
         let imageView = UIImageView.init(image: UIImage(named: "ic_tabbar\(index+1)"))
         self.imageView = imageView
@@ -65,13 +65,13 @@ class TabbarItem: UIView {
     
     func selected() {
         self.label.textColor = APP_COLOR
-        self.separatorView.isHidden = false
+        self.separatorView.backgroundColor = APP_COLOR
         self.imageView.image = UIImage(named: "ic_tabbar\(index+1)_selected")
     }
     
     func unselected() {
         self.label.textColor = .black
-        self.separatorView.isHidden = true
+        self.separatorView.backgroundColor = UIColor(hex: "#000000").withAlphaComponent(0.1)
         self.imageView.image = UIImage(named: "ic_tabbar\(index+1)")
     }
     
@@ -97,7 +97,7 @@ class TabbarViewController: UITabBarController {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         self.viewControllers = listVc
-        self.setupGradientTabbar()
+//        self.setupGradientTabbar()
 //        var height: CGFloat = 10
 //        if let safeAreaInsets = AppDelegate.shared.window?.safeAreaInsets.bottom, safeAreaInsets != 0 {
 //            height = 0
@@ -141,7 +141,7 @@ class TabbarViewController: UITabBarController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         if isFirstLayout {
-            viewGradientBottom.fadeView(style: .top, percentage: 0.55)
+//            viewGradientBottom.fadeView(style: .top, percentage: 0.55)
             isFirstLayout = !isFirstLayout
             NotificationCenter.default.addObserver(self, selector: #selector(showOpenAds), name: Notification.Name("AppOpenAdDidLoad"), object: nil)
         }

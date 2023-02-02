@@ -47,6 +47,17 @@ class BaseCollectionBuilder {
         return self
     }
     
+    func withEvenly(spacing: Double, heightForItem: Double, numberOfColumn: Int, insets: UIEdgeInsets = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)) -> BaseCollectionBuilder {
+        let spacing1 = spacing * Double(numberOfColumn - 1) + insets.left + insets.right
+        let widthForItem = (CommonUtil.SCREEN_WIDTH - spacing1) / Double(numberOfColumn)
+        flowLayout.minimumInteritemSpacing = spacing
+        flowLayout.minimumLineSpacing = spacing
+        flowLayout.itemSize = CGSize.init(width: widthForItem, height: heightForItem)
+//        flowLayout.estimatedItemSize = CGSize.init(width: widthForItem, height: heightForItem)
+        collectionView.contentInset = insets
+        return self
+    }
+    
     func withSpacingInRow(_ spacing: CGFloat) -> BaseCollectionBuilder {
         flowLayout.minimumInteritemSpacing = spacing
         return self

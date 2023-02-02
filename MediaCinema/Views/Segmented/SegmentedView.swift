@@ -82,6 +82,6 @@ extension SegmentedView: UICollectionViewDataSource, UICollectionViewDelegate, U
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let title = dataSource[indexPath.row]
-        return CGSize(width: title.estimateWidth(withConstrainedHeight: 44, font: CommonUtil.getAppFontRegular(16)) + 16, height: 44)
+        return CGSize(width: title.estimateWidth(withConstrainedHeight: 34, font: CommonUtil.getAppFontRegular(16)) + 16, height: 34)
     }
 }
