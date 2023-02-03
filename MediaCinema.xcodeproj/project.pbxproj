@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1841064C2988FC6A00A3A014 /* MovieViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841064B2988FC6A00A3A014 /* MovieViewController+Ext.swift */; };
+		18D8BA37298CFE3E00208D70 /* TVShowViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8BA36298CFE3E00208D70 /* TVShowViewController+Ext.swift */; };
+		18D8BA39298D038300208D70 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8BA38298D038300208D70 /* FavoriteButton.swift */; };
 		32838852062BC7567F7833AC /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F0B95CB2D8DB05E18F5C7 /* MovieViewController.swift */; };
 		524BEFA3298C0EF70055D40A /* TopRatingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524BEF9D298C0EF70055D40A /* TopRatingCollectionViewCell.swift */; };
 		524BEFA4298C0EF70055D40A /* MovieBannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 524BEF9E298C0EF70055D40A /* MovieBannerCollectionViewCell.xib */; };
@@ -173,6 +175,9 @@
 		52DDDC172988236800FB089E /* RatingHorizontalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DDDC162988236800FB089E /* RatingHorizontalView.xib */; };
 		5D49C95A830E1E7DB6135142 /* MoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D896100313AB69C7BC65D31 /* MoviePresenter.swift */; };
 		9D2334B1E1B1401C5A6C087E /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B24799E068ACA8816A095D6 /* MovieViewController.xib */; };
+		A742529254F3228A3574BC7E /* TVShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDFF7D5C0D3E8CBC8B5A284A /* TVShowViewController.xib */; };
+		ABBFF7959BBC5FD03BB75695 /* TVShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B297F1C21C0B0F453722AA6 /* TVShowViewController.swift */; };
+		C5F0618D5654D380C39E30B7 /* TVShowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D084EB5BBFF91FDB06B4D6 /* TVShowPresenter.swift */; };
 		ECFCF6AD10CEB6F812F00166 /* Pods_MediaCinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE51344147AABCC65A0FB9E /* Pods_MediaCinema.framework */; };
 /* End PBXBuildFile section */
 
@@ -180,6 +185,8 @@
 		022D1936DFED85992CFD1936 /* Pods-MediaCinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaCinema.release.xcconfig"; path = "Target Support Files/Pods-MediaCinema/Pods-MediaCinema.release.xcconfig"; sourceTree = "<group>"; };
 		0D896100313AB69C7BC65D31 /* MoviePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
 		1841064B2988FC6A00A3A014 /* MovieViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieViewController+Ext.swift"; sourceTree = "<group>"; };
+		18D8BA36298CFE3E00208D70 /* TVShowViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TVShowViewController+Ext.swift"; sourceTree = "<group>"; };
+		18D8BA38298D038300208D70 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		458F0B95CB2D8DB05E18F5C7 /* MovieViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		524BEF9D298C0EF70055D40A /* TopRatingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopRatingCollectionViewCell.swift; sourceTree = "<group>"; };
 		524BEF9E298C0EF70055D40A /* MovieBannerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieBannerCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -347,6 +354,9 @@
 		52DDDC162988236800FB089E /* RatingHorizontalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingHorizontalView.xib; sourceTree = "<group>"; };
 		6B24799E068ACA8816A095D6 /* MovieViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
 		6CE51344147AABCC65A0FB9E /* Pods_MediaCinema.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaCinema.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B297F1C21C0B0F453722AA6 /* TVShowViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TVShowViewController.swift; sourceTree = "<group>"; };
+		BDFF7D5C0D3E8CBC8B5A284A /* TVShowViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TVShowViewController.xib; sourceTree = "<group>"; };
+		C9D084EB5BBFF91FDB06B4D6 /* TVShowPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TVShowPresenter.swift; sourceTree = "<group>"; };
 		F49C597171245711D5B443C8 /* Pods-MediaCinema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaCinema.debug.xcconfig"; path = "Target Support Files/Pods-MediaCinema/Pods-MediaCinema.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -362,6 +372,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1823D69EF22455F8EC82B3AB /* TVShow */ = {
+			isa = PBXGroup;
+			children = (
+				3182DF3B671FADC1334EF438 /* Presenter */,
+				FE15838C88EB151B017EA987 /* View */,
+			);
+			path = TVShow;
+			sourceTree = "<group>";
+		};
+		3182DF3B671FADC1334EF438 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C9D084EB5BBFF91FDB06B4D6 /* TVShowPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		524BEF9C298C0EF70055D40A /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,6 +414,8 @@
 		52660B072986A15F001B672A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				52C036D32982D9AC00025F24 /* ImageStackView.swift */,
+				18D8BA38298D038300208D70 /* FavoriteButton.swift */,
 				524BEFAD298C135F0055D40A /* HeaderView */,
 				52D7CB3D298C0E3C0036F72F /* TableViewCell */,
 				524BEF9C298C0EF70055D40A /* CollectionViewCell */,
@@ -602,6 +631,7 @@
 			isa = PBXGroup;
 			children = (
 				7D71D8F094322168346B8C22 /* Movie */,
+				1823D69EF22455F8EC82B3AB /* TVShow */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -746,7 +776,6 @@
 				52C036D02982D9AC00025F24 /* BaseCollectionViewCell.swift */,
 				52C036D12982D9AC00025F24 /* InsetLabel.swift */,
 				52C036D22982D9AC00025F24 /* BaseTableCollectionViewCell.swift */,
-				52C036D32982D9AC00025F24 /* ImageStackView.swift */,
 				52C036D42982D9AC00025F24 /* ScaledHeightImageView.swift */,
 				52C036D52982D9AC00025F24 /* TableViewAdjustedHeight.swift */,
 				52BD91E6298AC872007E23DF /* HorizontalCollectionViewFlowLayout.swift */,
@@ -891,6 +920,16 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		FE15838C88EB151B017EA987 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B297F1C21C0B0F453722AA6 /* TVShowViewController.swift */,
+				BDFF7D5C0D3E8CBC8B5A284A /* TVShowViewController.xib */,
+				18D8BA36298CFE3E00208D70 /* TVShowViewController+Ext.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1007,6 +1046,7 @@
 				52C036F62982DBC600025F24 /* Assets.xcassets in Resources */,
 				5269665429844AED009C0F92 /* Lato-Regular.ttf in Resources */,
 				9D2334B1E1B1401C5A6C087E /* MovieViewController.xib in Resources */,
+				A742529254F3228A3574BC7E /* TVShowViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1098,6 +1138,7 @@
 				52C036DF2982D9AC00025F24 /* TableViewAdjustedHeight.swift in Sources */,
 				52C036E42982DA5B00025F24 /* BaseNavigator.swift in Sources */,
 				52C036822982D81500025F24 /* ViewInterface.swift in Sources */,
+				18D8BA39298D038300208D70 /* FavoriteButton.swift in Sources */,
 				52C036C82982D96B00025F24 /* BannerAdView.swift in Sources */,
 				52C036842982D81500025F24 /* ErrorHandleable.swift in Sources */,
 				52DDDC0029880DCB00FB089E /* CHIPageControlPuya.swift in Sources */,
@@ -1119,6 +1160,7 @@
 				52C036F82982DBC600025F24 /* Style.swift in Sources */,
 				52C036BD2982D96B00025F24 /* ViewProtocol.swift in Sources */,
 				52C036DE2982D9AC00025F24 /* ScaledHeightImageView.swift in Sources */,
+				18D8BA37298CFE3E00208D70 /* TVShowViewController+Ext.swift in Sources */,
 				52C036762982D7EF00025F24 /* KeyboardDisplayableViewController.swift in Sources */,
 				52C036E72982DB1500025F24 /* TabbarVC.swift in Sources */,
 				52C0363B2982D5BC00025F24 /* OptionalUnwrap.swift in Sources */,
@@ -1169,6 +1211,8 @@
 				52C036802982D81500025F24 /* PresenterInterface.swift in Sources */,
 				5D49C95A830E1E7DB6135142 /* MoviePresenter.swift in Sources */,
 				32838852062BC7567F7833AC /* MovieViewController.swift in Sources */,
+				C5F0618D5654D380C39E30B7 /* TVShowPresenter.swift in Sources */,
+				ABBFF7959BBC5FD03BB75695 /* TVShowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

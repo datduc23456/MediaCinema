@@ -74,7 +74,6 @@ class MovieViewController: BaseViewController, MovieViewProtocol {
     
     override func viewDidAppear(_ animated: Bool) {
         addGradientViewForBackground()
-        print("abc: \(CommonUtil.SCREEN_WIDTH)")
     }
 }
 
