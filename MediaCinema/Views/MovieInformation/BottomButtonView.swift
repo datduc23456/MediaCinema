@@ -9,6 +9,7 @@ import UIKit
 
 class BottomButtonView: BaseCustomView {
 
+    @IBOutlet weak var button: UIButton!
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

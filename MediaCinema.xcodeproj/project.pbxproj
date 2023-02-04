@@ -10,6 +10,9 @@
 		1841064C2988FC6A00A3A014 /* MovieViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841064B2988FC6A00A3A014 /* MovieViewController+Ext.swift */; };
 		18D8BA37298CFE3E00208D70 /* TVShowViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8BA36298CFE3E00208D70 /* TVShowViewController+Ext.swift */; };
 		18D8BA39298D038300208D70 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8BA38298D038300208D70 /* FavoriteButton.swift */; };
+		18D8BA3B298E0BB000208D70 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8BA3A298E0BAF00208D70 /* ImageButton.swift */; };
+		18D8BA3E298E1F1E00208D70 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8BA3C298E1F1E00208D70 /* ImageCollectionViewCell.swift */; };
+		18D8BA3F298E1F1E00208D70 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D8BA3D298E1F1E00208D70 /* ImageCollectionViewCell.xib */; };
 		32838852062BC7567F7833AC /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F0B95CB2D8DB05E18F5C7 /* MovieViewController.swift */; };
 		524BEFA3298C0EF70055D40A /* TopRatingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524BEF9D298C0EF70055D40A /* TopRatingCollectionViewCell.swift */; };
 		524BEFA4298C0EF70055D40A /* MovieBannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 524BEF9E298C0EF70055D40A /* MovieBannerCollectionViewCell.xib */; };
@@ -174,19 +177,26 @@
 		52DDDC152988234A00FB089E /* RatingHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DDDC142988234A00FB089E /* RatingHorizontalView.swift */; };
 		52DDDC172988236800FB089E /* RatingHorizontalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DDDC162988236800FB089E /* RatingHorizontalView.xib */; };
 		5D49C95A830E1E7DB6135142 /* MoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D896100313AB69C7BC65D31 /* MoviePresenter.swift */; };
+		943EE916F3B41B9A3213AAF3 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC825DAD91ECEA5D1AB9AE0 /* DetailViewController.xib */; };
 		9D2334B1E1B1401C5A6C087E /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B24799E068ACA8816A095D6 /* MovieViewController.xib */; };
+		A430251513280B7EE0488722 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D993863CE387E8D1212303 /* DetailPresenter.swift */; };
 		A742529254F3228A3574BC7E /* TVShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDFF7D5C0D3E8CBC8B5A284A /* TVShowViewController.xib */; };
 		ABBFF7959BBC5FD03BB75695 /* TVShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B297F1C21C0B0F453722AA6 /* TVShowViewController.swift */; };
 		C5F0618D5654D380C39E30B7 /* TVShowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D084EB5BBFF91FDB06B4D6 /* TVShowPresenter.swift */; };
+		E7CE363FB98259E217371FE3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DE4C781AD83A3BDECF4E9D /* DetailViewController.swift */; };
 		ECFCF6AD10CEB6F812F00166 /* Pods_MediaCinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE51344147AABCC65A0FB9E /* Pods_MediaCinema.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01D993863CE387E8D1212303 /* DetailPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		022D1936DFED85992CFD1936 /* Pods-MediaCinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaCinema.release.xcconfig"; path = "Target Support Files/Pods-MediaCinema/Pods-MediaCinema.release.xcconfig"; sourceTree = "<group>"; };
 		0D896100313AB69C7BC65D31 /* MoviePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
 		1841064B2988FC6A00A3A014 /* MovieViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieViewController+Ext.swift"; sourceTree = "<group>"; };
 		18D8BA36298CFE3E00208D70 /* TVShowViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TVShowViewController+Ext.swift"; sourceTree = "<group>"; };
 		18D8BA38298D038300208D70 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		18D8BA3A298E0BAF00208D70 /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
+		18D8BA3C298E1F1E00208D70 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		18D8BA3D298E1F1E00208D70 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		458F0B95CB2D8DB05E18F5C7 /* MovieViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		524BEF9D298C0EF70055D40A /* TopRatingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopRatingCollectionViewCell.swift; sourceTree = "<group>"; };
 		524BEF9E298C0EF70055D40A /* MovieBannerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieBannerCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -354,7 +364,9 @@
 		52DDDC162988236800FB089E /* RatingHorizontalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingHorizontalView.xib; sourceTree = "<group>"; };
 		6B24799E068ACA8816A095D6 /* MovieViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
 		6CE51344147AABCC65A0FB9E /* Pods_MediaCinema.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaCinema.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DC825DAD91ECEA5D1AB9AE0 /* DetailViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		9B297F1C21C0B0F453722AA6 /* TVShowViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TVShowViewController.swift; sourceTree = "<group>"; };
+		B2DE4C781AD83A3BDECF4E9D /* DetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BDFF7D5C0D3E8CBC8B5A284A /* TVShowViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TVShowViewController.xib; sourceTree = "<group>"; };
 		C9D084EB5BBFF91FDB06B4D6 /* TVShowPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TVShowPresenter.swift; sourceTree = "<group>"; };
 		F49C597171245711D5B443C8 /* Pods-MediaCinema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaCinema.debug.xcconfig"; path = "Target Support Files/Pods-MediaCinema/Pods-MediaCinema.debug.xcconfig"; sourceTree = "<group>"; };
@@ -389,6 +401,16 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		4E9EA10A5A40E6D7EFAF3821 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2DE4C781AD83A3BDECF4E9D /* DetailViewController.swift */,
+				8DC825DAD91ECEA5D1AB9AE0 /* DetailViewController.xib */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
 		524BEF9C298C0EF70055D40A /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,6 +420,8 @@
 				524BEFA0298C0EF70055D40A /* TopRatingCollectionViewCell.xib */,
 				524BEF9F298C0EF70055D40A /* MovieCollectionViewCell.swift */,
 				524BEFA2298C0EF70055D40A /* MovieCollectionViewCell.xib */,
+				18D8BA3C298E1F1E00208D70 /* ImageCollectionViewCell.swift */,
+				18D8BA3D298E1F1E00208D70 /* ImageCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -416,6 +440,7 @@
 			children = (
 				52C036D32982D9AC00025F24 /* ImageStackView.swift */,
 				18D8BA38298D038300208D70 /* FavoriteButton.swift */,
+				18D8BA3A298E0BAF00208D70 /* ImageButton.swift */,
 				524BEFAD298C135F0055D40A /* HeaderView */,
 				52D7CB3D298C0E3C0036F72F /* TableViewCell */,
 				524BEF9C298C0EF70055D40A /* CollectionViewCell */,
@@ -632,6 +657,7 @@
 			children = (
 				7D71D8F094322168346B8C22 /* Movie */,
 				1823D69EF22455F8EC82B3AB /* TVShow */,
+				5CDE03A77B1A45E70E35F8D4 /* Detail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -886,6 +912,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		5CDE03A77B1A45E70E35F8D4 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				94C1264B81A3A52D96FE1352 /* Presenter */,
+				4E9EA10A5A40E6D7EFAF3821 /* View */,
+			);
+			name = Detail;
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		7D71D8F094322168346B8C22 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
@@ -893,6 +929,15 @@
 				58A8F53659CD3BFBC66DA6F8 /* View */,
 			);
 			path = Movie;
+			sourceTree = "<group>";
+		};
+		94C1264B81A3A52D96FE1352 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				01D993863CE387E8D1212303 /* DetailPresenter.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		BFE0F76D18A3A5FFE5F61F45 /* Pods */ = {
@@ -1030,6 +1075,7 @@
 				52C036042982D1BF00025F24 /* Assets.xcassets in Resources */,
 				52C036C22982D96B00025F24 /* BigNativeAdView.xib in Resources */,
 				52C036212982D49D00025F24 /* seagull italic.ttf in Resources */,
+				18D8BA3F298E1F1E00208D70 /* ImageCollectionViewCell.xib in Resources */,
 				52C036F92982DBC600025F24 /* AYImageViewerViewController.xib in Resources */,
 				52C036C42982D96B00025F24 /* MediumNativeAdView.xib in Resources */,
 				5269665929844AED009C0F92 /* Lato-Light.ttf in Resources */,
@@ -1047,6 +1093,7 @@
 				5269665429844AED009C0F92 /* Lato-Regular.ttf in Resources */,
 				9D2334B1E1B1401C5A6C087E /* MovieViewController.xib in Resources */,
 				A742529254F3228A3574BC7E /* TVShowViewController.xib in Resources */,
+				943EE916F3B41B9A3213AAF3 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1146,6 +1193,7 @@
 				52C036DA2982D9AC00025F24 /* BaseCollectionViewCell.swift in Sources */,
 				52C036B42982D96B00025F24 /* NativeAd.swift in Sources */,
 				52C036462982D64B00025F24 /* PersonResponse.swift in Sources */,
+				18D8BA3B298E0BB000208D70 /* ImageButton.swift in Sources */,
 				52C036742982D7EF00025F24 /* BaseViewController.swift in Sources */,
 				52DDDBF929880DCB00FB089E /* CHIBasePageControl.swift in Sources */,
 				52C036732982D7EF00025F24 /* BaseCollectionViewController.swift in Sources */,
@@ -1192,6 +1240,7 @@
 				52C036BE2982D96B00025F24 /* BaseCollectionAdsViewCell.swift in Sources */,
 				52C036B72982D96B00025F24 /* UIApplicationExtension.swift in Sources */,
 				52C036312982D50600025F24 /* Constant.swift in Sources */,
+				18D8BA3E298E1F1E00208D70 /* ImageCollectionViewCell.swift in Sources */,
 				52C036662982D78900025F24 /* NSObject+Ext.swift in Sources */,
 				52C036862982D81500025F24 /* InteractorInterface.swift in Sources */,
 				52C036BB2982D96B00025F24 /* MediumNativeAdCollectionViewCell.swift in Sources */,
@@ -1213,6 +1262,8 @@
 				32838852062BC7567F7833AC /* MovieViewController.swift in Sources */,
 				C5F0618D5654D380C39E30B7 /* TVShowPresenter.swift in Sources */,
 				ABBFF7959BBC5FD03BB75695 /* TVShowViewController.swift in Sources */,
+				A430251513280B7EE0488722 /* DetailPresenter.swift in Sources */,
+				E7CE363FB98259E217371FE3 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

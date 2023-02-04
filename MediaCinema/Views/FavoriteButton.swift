@@ -16,6 +16,8 @@ class FavoriteButton: UIButton {
         super.init(coder: coder)
         self.backgroundColor = .white
         self.setImage(UIImage(named: "ic_heart_selected"), for: .normal)
+        self.setTitle("", for: .normal)
+        self.tintColor = APP_COLOR
         self.cornerRadius = self.frame.height / 2
         self.addTapGestureRecognizer {
             self.didTap?()
