@@ -9,6 +9,8 @@ import UIKit
 
 class HeaderView: BaseCustomView {
 
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var lbTitle: UILabel!
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

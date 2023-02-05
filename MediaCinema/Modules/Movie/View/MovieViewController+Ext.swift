@@ -41,6 +41,7 @@ extension MovieViewController {
     
     fileprivate func configTopRatingView() {
         headerTopRating = HeaderView()
+        headerTopRating.button.isHidden = true
         headerTopRating.snp.makeConstraints {
             $0.height.equalTo(60)
         }
@@ -50,10 +51,11 @@ extension MovieViewController {
         }
         tableViewTopRating = UITableView()
         tableViewTopRating.snp.makeConstraints {
-            $0.height.equalTo(387)
+            $0.height.equalTo(417)
         }
         headerTopRating.contentView.backgroundColor = UIColor(hex: "#E9E9E9").withAlphaComponent(0.4)
         tableViewTopRating.backgroundColor = UIColor(hex: "#E9E9E9").withAlphaComponent(0.4)
+        tableViewTopRating.separatorStyle = .none
         seeAllTopRatingBtnView.contentView.backgroundColor = UIColor(hex: "#E9E9E9").withAlphaComponent(0.4)
 //        seeAllTopRatingBtnView.conte
         stackView.addArrangedSubview(headerTopRating)
@@ -63,6 +65,7 @@ extension MovieViewController {
     
     fileprivate func configTrendingView() {
         headerTrending = HeaderView()
+        headerTrending.lbTitle.text = "Trending"
         headerTrending.snp.makeConstraints {
             $0.height.equalTo(60)
         }
