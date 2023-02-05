@@ -7,23 +7,42 @@
 
 import UIKit
 
-class ImageButton: UIButton {
+class ImageButton: UIView {
 
     private var shadowLayer: CAShapeLayer!
+    var imageView: UIImageView!
+    var label: UILabel!
+    
+    @IBInspectable public var image: UIImage = UIImage(named: "ic_play")!
+    @IBInspectable public var title: String = "" {
+        didSet {
+            label.text = title
+            self.layoutIfNeeded()
+        }
+    }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        
-        self.titleLabel?.font = CommonUtil.getAppFontRegular(16)
 //        self.backgroundColor = APP_COLOR
+        label = UILabel()
+        label.textColor = .white
+        label.font = CommonUtil.getAppFontRegular(16)
+        label.text = title
+        self.addSubview(label)
+        imageView = UIImageView()
+        imageView.image = image
+        self.addSubview(imageView)
+        imageView.snp.makeConstraints {
+            $0.width.height.equalTo(22)
+            $0.centerY.equalToSuperview()
+            $0.leading.equalToSuperview().offset(13)
+        }
         
-        if #available(iOS 15.0, *) {
-            var config = UIButton.Configuration.filled()
-            config.baseBackgroundColor = .clear
-            config.imagePadding = 5
-            self.configuration = config
-        } else {
-            self.imageEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
+        label.snp.makeConstraints {
+            $0.height.equalTo(19)
+            $0.centerY.equalToSuperview()
+            $0.leading.equalTo(imageView.snp.trailing).offset(6)
+            $0.trailing.equalToSuperview().offset(-22)
         }
     }
     
@@ -31,13 +50,14 @@ class ImageButton: UIButton {
         super.layoutSubviews()
         
         if shadowLayer == nil {
+            self.layer.masksToBounds = false
             shadowLayer = CAShapeLayer()
             shadowLayer.path = UIBezierPath(roundedRect: bounds, cornerRadius: 22).cgPath
             shadowLayer.fillColor = APP_COLOR.cgColor
 //            shadowLayer.backgroundColor = APP_COLOR.cgColor
             shadowLayer.shadowColor = UIColor.black.cgColor
             shadowLayer.shadowPath = shadowLayer.path
-            shadowLayer.shadowOffset = CGSize(width: 0.0, height: 8.0)
+            shadowLayer.shadowOffset = CGSize(width: 1.0, height: 10.0)
             shadowLayer.shadowOpacity = 0.2
             shadowLayer.shadowRadius = 4
             

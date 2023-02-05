@@ -15,7 +15,15 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieInformationView" customModule="MediaCinema" customModuleProvider="target">
+            <connections>
+                <outlet property="lbCountry" destination="MLy-pa-hRq" id="ZEd-wO-JHV"/>
+                <outlet property="lbDirector" destination="x1r-kE-wMZ" id="bnF-fc-N0h"/>
+                <outlet property="lbInfomation" destination="VCH-gn-BuX" id="Sz9-Nh-SLr"/>
+                <outlet property="lbName" destination="Tvu-5o-bPy" id="z5V-7M-dgk"/>
+                <outlet property="ratingView" destination="cjq-sW-7S4" id="OGs-8E-7gt"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="122"/>
@@ -28,10 +36,10 @@
                             <rect key="frame" x="0.0" y="0.0" width="300" height="122"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="nSx-eg-hGJ">
-                                    <rect key="frame" x="8" y="11" width="274.66666666666669" height="84"/>
+                                    <rect key="frame" x="8" y="11" width="314.66666666666669" height="89.666666666666671"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joker put on a happy face" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tvu-5o-bPy">
-                                            <rect key="frame" x="0.0" y="0.0" width="274.66666666666669" height="22"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314.66666666666669" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="22" id="Jed-VY-MLH"/>
                                             </constraints>
@@ -40,7 +48,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zvb-X5-MQd">
-                                            <rect key="frame" x="0.0" y="24" width="274.66666666666669" height="22"/>
+                                            <rect key="frame" x="0.0" y="24" width="314.66666666666669" height="22"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Director:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jde-q9-hHE">
                                                     <rect key="frame" x="0.0" y="2.6666666666666679" width="54.333333333333336" height="17"/>
@@ -62,14 +70,25 @@
                                                 <constraint firstItem="x1r-kE-wMZ" firstAttribute="leading" secondItem="jde-q9-hHE" secondAttribute="trailing" constant="4" id="vrn-ZT-KaA"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2h1min | Crime, Drama | 8 June 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCH-gn-BuX">
-                                            <rect key="frame" x="0.0" y="48" width="274.66666666666669" height="16.666666666666671"/>
-                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
-                                            <color key="textColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDY-kf-S6C">
+                                            <rect key="frame" x="0.0" y="48" width="314.66666666666669" height="22"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2h1min | Crime, Drama | 8 June 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCH-gn-BuX">
+                                                    <rect key="frame" x="0.0" y="2.6666666666666643" width="308.66666666666669" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="VCH-gn-BuX" firstAttribute="leading" secondItem="fDY-kf-S6C" secondAttribute="leading" id="7bt-vH-Zw5"/>
+                                                <constraint firstItem="VCH-gn-BuX" firstAttribute="centerY" secondItem="fDY-kf-S6C" secondAttribute="centerY" id="DFL-wA-3KX"/>
+                                                <constraint firstAttribute="trailing" secondItem="VCH-gn-BuX" secondAttribute="trailing" constant="6" id="xm9-aJ-tuL"/>
+                                            </constraints>
+                                        </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Japan)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLy-pa-hRq">
-                                            <rect key="frame" x="0.0" y="66.666666666666671" width="274.66666666666669" height="17.333333333333329"/>
+                                            <rect key="frame" x="0.0" y="72" width="314.66666666666669" height="17.666666666666671"/>
                                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -78,8 +97,8 @@
                                     <constraints>
                                         <constraint firstItem="Zvb-X5-MQd" firstAttribute="height" secondItem="Tvu-5o-bPy" secondAttribute="height" id="BbN-wp-rkV"/>
                                         <constraint firstItem="MLy-pa-hRq" firstAttribute="height" secondItem="Tvu-5o-bPy" secondAttribute="height" multiplier="0.8" id="TDw-qd-11K"/>
+                                        <constraint firstItem="fDY-kf-S6C" firstAttribute="height" secondItem="Tvu-5o-bPy" secondAttribute="height" id="euN-e8-Ky2"/>
                                         <constraint firstItem="jde-q9-hHE" firstAttribute="leading" secondItem="Tvu-5o-bPy" secondAttribute="leading" id="mkn-XI-nwZ"/>
-                                        <constraint firstItem="VCH-gn-BuX" firstAttribute="height" secondItem="Zvb-X5-MQd" secondAttribute="height" multiplier="0.75" id="uUz-9w-pe5"/>
                                     </constraints>
                                 </stackView>
                             </subviews>

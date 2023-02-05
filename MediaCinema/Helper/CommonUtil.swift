@@ -116,6 +116,10 @@ class CommonUtil {
         activityViewController.isModalInPresentation = false
         viewController.present(activityViewController, animated: true, completion: nil)
     }
+    
+    static func minutesToHoursAndMinutes(_ minutes: Int) -> (hours: Int , leftMinutes: Int) {
+        return (minutes / 60, (minutes % 60))
+    }
 }
 
 public func delay(_ delay:Double, closure:@escaping ()->()) {

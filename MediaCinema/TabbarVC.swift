@@ -102,6 +102,13 @@ class TabbarViewController: UITabBarController {
 //        if let safeAreaInsets = AppDelegate.shared.window?.safeAreaInsets.bottom, safeAreaInsets != 0 {
 //            height = 0
 //        }
+        let view = UIView()
+        view.backgroundColor = .white
+        self.view.addSubview(view)
+        view.snp.makeConstraints {
+            $0.leading.trailing.bottom.equalToSuperview()
+            $0.height.equalTo(AppDelegate.shared.window!.safeAreaInsets.bottom)
+        }
         let stackView = UIStackView()
         stackView.axis = .horizontal
         stackView.translatesAutoresizingMaskIntoConstraints = false

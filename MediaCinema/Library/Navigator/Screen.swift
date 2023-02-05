@@ -102,9 +102,17 @@ enum AppScreens: String, Screen, CaseIterable {
 //        }
         switch self {
         case .movie:
-            return MovieViewController(presenter: MoviePresenter())
+            let vc = MovieViewController(presenter: MoviePresenter())
+            vc.payload = payload
+            return vc
         case .tvShow:
-            return TVShowViewController(presenter: TVShowPresenter())
+            let vc = TVShowViewController(presenter: TVShowPresenter())
+            vc.payload = payload
+            return vc
+        case .playvideo:
+            let vc = PlayVideoViewController(presenter: PlayVideoPresenter())
+            vc.payload = payload
+            return vc
         default:
             return UIViewController()
         }

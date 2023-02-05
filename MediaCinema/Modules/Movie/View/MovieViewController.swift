@@ -11,6 +11,10 @@ import CollectionViewPagingLayout
 
 class MovieViewController: BaseViewController, MovieViewProtocol {
 
+    @IBOutlet weak var imgClearSearch: UIImageView!
+    @IBOutlet weak var lbPlaceHolder: UILabel!
+    @IBOutlet weak var tfSearch: UITextField!
+    @IBOutlet weak var movieInfoView: MovieInformationView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var pageControl: CHIPageControlJaloro!
@@ -25,7 +29,16 @@ class MovieViewController: BaseViewController, MovieViewProtocol {
     var seeAllTopRatingBtnView: BottomButtonView!
     var segmentedView: SegmentedView!
     var presenter: MoviePresenterProtocol
-
+    var delayValue : Double = 2.0
+    var timer:Timer?
+    //-MARK: Datasource
+    var bannerList: [Movie] = []
+    var trendingList: [Movie] = []
+    var popularList: [Movie] = []
+    var ratingList: [Movie] = []
+    var detailListBanner: [MovieDetail] = []
+    //
+    
 	init(presenter: MoviePresenterProtocol) {
         self.presenter = presenter
         super.init(nibName: MovieViewController.className, bundle: nil)
@@ -63,10 +76,30 @@ class MovieViewController: BaseViewController, MovieViewProtocol {
         presenter.viewDidLoad()
         pageControl.elementWidth = (CommonUtil.SCREEN_WIDTH - 32) / 5
         let _: MovieNavigationView = initCustomNavigation(.movie)
-//        addGradientViewForBackground()
-        
+        segmentedView.didSelectSegmented = { [weak self] genreId in
+            guard let `self` = self else { return }
+            self.presenter.didSelectGenre(genreId)
+        }
+        tfSearch.delegate = self
+        tfSearch.addTarget(self, action: #selector(changedTextFieldValue), for: .editingChanged)
+        tfSearch.returnKeyType = .search
+    }
+    
+    @objc func changedTextFieldValue() {
+        timer?.invalidate()
+        timer = Timer.scheduledTimer(timeInterval: delayValue, target: self, selector: #selector(self.searchAction), userInfo: nil, repeats: false)
     }
 
+    @objc func searchAction() {
+        if let query = tfSearch.text?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines) {
+            if !query.isEmpty {
+                presenter.searchMoviePopular(query)
+            } else {
+                
+            }
+        }
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: AppDelegate.shared.appRootViewController.customTabbarHeight, right: 0)
@@ -80,26 +113,33 @@ class MovieViewController: BaseViewController, MovieViewProtocol {
 extension MovieViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == collectionViewBanner {
-            return 5
+            return bannerList.count
         } else if collectionView == collectionViewMovieWithGenre {
-            return 10
+            return popularList.count
         } else if collectionView == collectionViewMovieTrending {
-            return 6
+            return trendingList.count
         }
         return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == collectionViewBanner {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MovieBannerCollectionViewCell.className, for: indexPath)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MovieBannerCollectionViewCell.className, for: indexPath) as! MovieBannerCollectionViewCell
+            let movie = bannerList[indexPath.row]
+            cell.imgBanner.setImageUrlWithPlaceHolder(url: URL(string: "\(baseURLImage)\(movie.posterPath)"))
             return cell
         } else if collectionView == collectionViewMovieWithGenre {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MovieCollectionViewCell.className, for: indexPath) as! MovieCollectionViewCell
+            
             cell.viewRating.isHidden = true
-//            cell.imgThumbnail.dropShadow(color: UIColor.black, offSet: CGSize(width: 0, height: 8), radius: 3, cornerRadius: 8)
+            let movie = popularList[indexPath.row]
+            cell.configCell(movie)
             return cell
         } else if collectionView == collectionViewMovieTrending {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MovieCollectionViewCell.className, for: indexPath) as! MovieCollectionViewCell
+            let movie = trendingList[indexPath.row]
+            cell.viewFavorite.isHidden = false
+            cell.configCell(movie)
             return cell
         }
         return UICollectionViewCell()
@@ -108,12 +148,14 @@ extension MovieViewController: UICollectionViewDataSource, UICollectionViewDeleg
 
 extension MovieViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return ratingList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: MovieTableViewCell.className, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: MovieTableViewCell.className, for: indexPath) as! MovieTableViewCell
         cell.selectionStyle = .none
+        let movie = ratingList[indexPath.row]
+        cell.configCell(movie, index: indexPath.row + 1)
         return cell
     }
     
@@ -124,6 +166,10 @@ extension MovieViewController: UITableViewDataSource, UITableViewDelegate {
 
 extension MovieViewController: CollectionViewPagingLayoutDelegate {
     func onCurrentPageChanged(layout: CollectionViewPagingLayout, currentPage: Int) {
+        let movie = self.bannerList[currentPage]
+        if let movieDetail = self.detailListBanner.first(where: {$0.id == movie.id }) {
+            self.movieInfoView.fillInfo(movieDetail)
+        }
         pageControl.progress = Double(currentPage)
     }
 }

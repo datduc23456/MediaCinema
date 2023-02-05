@@ -103,8 +103,8 @@ open class BaseViewController: UIViewController {
         return nav
     }
     
-    func addGradientViewForBackground() {
-        _ = view.linearGradientBackground(angleInDegs: 180, colors: [UIColor(hex: "#CE94F8").cgColor, UIColor(hex: "#1EB3CF").cgColor])
+    func addGradientViewForBackground(_ colors: [CGColor] = [UIColor(hex: "#CE94F8").cgColor, UIColor(hex: "#1EB3CF").cgColor], locations: [NSNumber] = []) {
+        _ = view.linearGradientBackground(angleInDegs: 180, colors: colors, locations: locations)
     }
 }
 

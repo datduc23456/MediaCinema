@@ -9,6 +9,7 @@ import UIKit
 
 class RatingHorizontalView: BaseCustomView {
 
+    @IBOutlet weak var lbRating: UILabel!
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

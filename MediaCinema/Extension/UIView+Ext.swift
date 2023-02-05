@@ -555,9 +555,12 @@ extension UIView {
         return gradient
     }
     
-    func linearGradientBackground(angleInDegs: Int, colors: [CGColor]) -> CAGradientLayer {
+    func linearGradientBackground(angleInDegs: Int, colors: [CGColor], locations: [NSNumber] = []) -> CAGradientLayer {
           let gradientBaseLayer: CAGradientLayer = CAGradientLayer()
           gradientBaseLayer.frame = self.frame
+        if !locations.isEmpty {
+            gradientBaseLayer.locations = locations
+        }
           gradientBaseLayer.colors = colors
           gradientBaseLayer.startPoint = startAndEndPointsFrom(angle: angleInDegs).startPoint
           gradientBaseLayer.endPoint = startAndEndPointsFrom(angle: angleInDegs).endPoint

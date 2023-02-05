@@ -9,6 +9,9 @@ import UIKit
 import CollectionViewPagingLayout
 
 class MovieBannerCollectionViewCell: UICollectionViewCell, StackTransformView {
+    @IBOutlet weak var imgBanner: UIImageView!
+    @IBOutlet weak var outerView: UIView!
+    private var shadowLayer: CAShapeLayer!
     var stackOptions: StackTransformViewOptions {
         var options = StackTransformViewOptions.layout(.perspective)
         options.blurEffectEnabled = true
@@ -20,7 +23,25 @@ class MovieBannerCollectionViewCell: UICollectionViewCell, StackTransformView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+//        self.imgBanner.layer.masksToBounds = true
+        imgBanner.layer.cornerRadius = 8
+//        imgBanner.cornerRadius = 8
+//        if shadowLayer == nil {
+//            shadowLayer = CAShapeLayer()
+//            shadowLayer.path = UIBezierPath(roundedRect: outerView.bounds, cornerRadius: 10).cgPath
+////            shadowLayer.fillColor = APP_COLOR.cgColor
+////            shadowLayer.backgroundColor = APP_COLOR.cgColor
+//            shadowLayer.shadowColor = UIColor.red.cgColor
+//            shadowLayer.shadowPath = shadowLayer.path
+////            shadowLayer.shadowOffset = CGSize(width: 1.0, height: 4.0)
+////            shadowLay
+//            shadowLayer.shadowOpacity = 0.2
+//            shadowLayer.shadowRadius = 10
+//
+//            outerView.layer.insertSublayer(shadowLayer, at: 0)
+//            //layer.insertSublayer(shadowLayer, below: nil) // also works
+//        }
+        
     }
 
 }

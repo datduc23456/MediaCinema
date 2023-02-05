@@ -45,7 +45,13 @@ struct MovieDetail: Codable {
     let credits: Credits
     let releaseDate: String
     let runtime: Int
-    
+    var movieName: String {
+        if isTVShow() {
+            return originalName
+        } else {
+            return originalTitle
+        }
+    }
     enum CodingKeys: String, CodingKey {
         case adult
         case originalTitle = "original_title"

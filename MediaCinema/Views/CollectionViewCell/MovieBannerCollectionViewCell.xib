@@ -19,18 +19,31 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ndb-Ka-OrQ">
                         <rect key="frame" x="0.0" y="0.0" width="288" height="437"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joker" translatesAutoresizingMaskIntoConstraints="NO" id="wUi-4K-0E6">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IgH-CW-RRs">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="437"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joker" translatesAutoresizingMaskIntoConstraints="NO" id="wUi-4K-0E6">
                                 <rect key="frame" x="0.0" y="0.0" width="288" height="437"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="437" id="RSc-35-J5o"/>
                                     <constraint firstAttribute="width" constant="288" id="ee5-AG-YKb"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="wUi-4K-0E6" firstAttribute="top" secondItem="IgH-CW-RRs" secondAttribute="top" id="IK0-uo-95N"/>
                             <constraint firstItem="wUi-4K-0E6" firstAttribute="leading" secondItem="Ndb-Ka-OrQ" secondAttribute="leading" id="Olv-Cj-ZGC"/>
+                            <constraint firstItem="wUi-4K-0E6" firstAttribute="leading" secondItem="IgH-CW-RRs" secondAttribute="leading" id="WKu-ib-xJq"/>
+                            <constraint firstItem="wUi-4K-0E6" firstAttribute="trailing" secondItem="IgH-CW-RRs" secondAttribute="trailing" id="cjO-Xw-o1U"/>
                             <constraint firstItem="wUi-4K-0E6" firstAttribute="top" secondItem="Ndb-Ka-OrQ" secondAttribute="top" id="fic-As-Ur4"/>
+                            <constraint firstItem="wUi-4K-0E6" firstAttribute="bottom" secondItem="IgH-CW-RRs" secondAttribute="bottom" id="smB-VN-AtR"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -42,6 +55,10 @@
                 <constraint firstAttribute="bottom" secondItem="Ndb-Ka-OrQ" secondAttribute="bottom" id="rXR-1g-erJ"/>
             </constraints>
             <size key="customSize" width="307" height="404"/>
+            <connections>
+                <outlet property="imgBanner" destination="wUi-4K-0E6" id="1rI-hY-X2C"/>
+                <outlet property="outerView" destination="IgH-CW-RRs" id="idN-Nr-ZD7"/>
+            </connections>
             <point key="canvasLocation" x="325.95419847328242" y="113.38028169014085"/>
         </collectionViewCell>
     </objects>

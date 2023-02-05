@@ -25,6 +25,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="490" height="146"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwq-Gf-4K7">
+                        <rect key="frame" x="20" y="8" width="86" height="130"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Black_adam" translatesAutoresizingMaskIntoConstraints="NO" id="6X4-I7-bCY">
                         <rect key="frame" x="20" y="8" width="86" height="130"/>
                         <constraints>
@@ -132,7 +136,7 @@
                         </subviews>
                     </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ivk-8L-tVl">
-                        <rect key="frame" x="3.0000000000000036" y="41" width="61.333333333333343" height="117"/>
+                        <rect key="frame" x="3.0000000000000036" y="46" width="61.333333333333343" height="117"/>
                         <attributedString key="attributedText">
                             <fragment content="2">
                                 <attributes>
@@ -149,14 +153,18 @@
             <color key="backgroundColor" red="0.24705882352941178" green="0.25882352941176467" blue="0.28627450980392155" alpha="0.0" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="Ivk-8L-tVl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="32r-A9-HPr"/>
+                <constraint firstItem="bwq-Gf-4K7" firstAttribute="bottom" secondItem="6X4-I7-bCY" secondAttribute="bottom" id="8sA-Vc-Qh6"/>
                 <constraint firstAttribute="top" secondItem="6X4-I7-bCY" secondAttribute="top" constant="-8" id="HmC-wx-fL2"/>
                 <constraint firstAttribute="bottom" secondItem="mLb-Dn-zLC" secondAttribute="bottom" id="N4u-yK-TPl"/>
+                <constraint firstItem="bwq-Gf-4K7" firstAttribute="leading" secondItem="6X4-I7-bCY" secondAttribute="leading" id="Ngs-RD-m5d"/>
                 <constraint firstItem="6X4-I7-bCY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="RMl-0d-AFA"/>
                 <constraint firstAttribute="trailing" secondItem="mLb-Dn-zLC" secondAttribute="trailing" id="RSI-2W-fKI"/>
+                <constraint firstItem="bwq-Gf-4K7" firstAttribute="top" secondItem="6X4-I7-bCY" secondAttribute="top" id="ZVc-mf-9JL"/>
                 <constraint firstItem="mLb-Dn-zLC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="bap-FI-uzq"/>
                 <constraint firstItem="mLb-Dn-zLC" firstAttribute="leading" secondItem="6X4-I7-bCY" secondAttribute="trailing" constant="12" id="hf7-yn-EJr"/>
                 <constraint firstAttribute="bottom" secondItem="6X4-I7-bCY" secondAttribute="bottom" constant="8" id="juu-32-OZ8"/>
-                <constraint firstItem="Ivk-8L-tVl" firstAttribute="bottom" secondItem="6X4-I7-bCY" secondAttribute="bottom" constant="20" id="vVE-qd-t6c"/>
+                <constraint firstItem="bwq-Gf-4K7" firstAttribute="trailing" secondItem="6X4-I7-bCY" secondAttribute="trailing" id="tBf-Xc-sYJ"/>
+                <constraint firstItem="Ivk-8L-tVl" firstAttribute="bottom" secondItem="6X4-I7-bCY" secondAttribute="bottom" constant="25" id="vVE-qd-t6c"/>
             </constraints>
             <size key="customSize" width="490" height="226"/>
             <userDefinedRuntimeAttributes>
@@ -184,6 +192,7 @@
                 <outlet property="lbNumber" destination="Ivk-8L-tVl" id="M55-6w-4BE"/>
                 <outlet property="lbRating" destination="PRR-iA-HAo" id="STV-Va-EBS"/>
                 <outlet property="lbTitle" destination="Rel-6M-SLR" id="8db-9M-gfV"/>
+                <outlet property="outerView" destination="bwq-Gf-4K7" id="ME4-Np-Be8"/>
             </connections>
             <point key="canvasLocation" x="465.64885496183206" y="49.295774647887328"/>
         </collectionViewCell>

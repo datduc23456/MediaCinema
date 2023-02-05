@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayVideoViewController" customModule="MediaCinema" customModuleProvider="target">
+            <connections>
+                <outlet property="playerView" destination="uge-J6-iUs" id="74C-hA-TNc"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Q3p-Ee-1CD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uge-J6-iUs" customClass="YTPlayerView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="SaT-j1-E50"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SaT-j1-E50" firstAttribute="trailing" secondItem="uge-J6-iUs" secondAttribute="trailing" id="WnI-eu-C7f"/>
+                <constraint firstItem="uge-J6-iUs" firstAttribute="top" secondItem="SaT-j1-E50" secondAttribute="top" id="kMW-eA-bBN"/>
+                <constraint firstItem="uge-J6-iUs" firstAttribute="leading" secondItem="SaT-j1-E50" secondAttribute="leading" id="n4w-My-c24"/>
+                <constraint firstItem="SaT-j1-E50" firstAttribute="bottom" secondItem="uge-J6-iUs" secondAttribute="bottom" id="xvd-DW-vCX"/>
+            </constraints>
+            <point key="canvasLocation" x="46" y="-10"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

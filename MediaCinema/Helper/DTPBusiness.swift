@@ -40,6 +40,19 @@ class DTPBusiness {
         }
     }
     
+    func roundVote(maxDigit: Int = 2, _ value: Double) -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.usesSignificantDigits = true
+        numberFormatter.maximumSignificantDigits = maxDigit
+        return numberFormatter.string(from: value as NSNumber).isNil(value: "0")
+    }
+    
+    func getMovieInfoString(_ movie: MovieDetail) -> String {
+        let hoursAndMinutes = CommonUtil.minutesToHoursAndMinutes(movie.runtime)
+        let first2 = Array(movie.genres.prefix(2))
+        return "\(hoursAndMinutes.hours)h\(hoursAndMinutes.leftMinutes)min | \(mapToGenreName(first2.map({ $0.id }))) | \(movie.releaseDate.toDateFormat(toFormat: "dd MMMM yyyy"))"
+    }
+    
     func fetchMyReviewWithId(_ id: String, completion: ((ReviewsResultObject?) -> Void)) {
         let predicate = NSPredicate(format: "_id == %@", id)
         let query = realmUtils.dataQueryByPredicate(type: ReviewsResultObject.self, predicate: predicate)

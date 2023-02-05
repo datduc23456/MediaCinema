@@ -48,6 +48,13 @@ struct Movie: Codable {
     var originalName: String = ""
     var name: String = ""
     var dateFavorite: String = ""
+    var movieName: String {
+        if isTVShow() {
+            return originalName
+        } else {
+            return originalTitle
+        }
+    }
     
     enum CodingKeys: String, CodingKey {
         case originalName = "original_name"

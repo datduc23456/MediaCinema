@@ -14,6 +14,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomButtonView" customModule="MediaCinema" customModuleProvider="target">
             <connections>
+                <outlet property="bottomSpacing" destination="L5n-Ed-a23" id="Fte-EF-Uyj"/>
                 <outlet property="button" destination="Iiu-A2-RRw" id="j6l-JO-neK"/>
             </connections>
         </placeholder>
@@ -23,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iiu-A2-RRw">
-                    <rect key="frame" x="130.66666666666666" y="16" width="131.99999999999997" height="36"/>
+                    <rect key="frame" x="130.66666666666666" y="41" width="131.99999999999997" height="36"/>
                     <color key="backgroundColor" red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="jXe-jV-657"/>
@@ -43,8 +44,8 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="Iiu-A2-RRw" secondAttribute="bottom" constant="24" id="L5n-Ed-a23"/>
                 <constraint firstItem="Iiu-A2-RRw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="awp-yf-RWY"/>
-                <constraint firstItem="Iiu-A2-RRw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="d37-zj-X4i"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="130.53435114503816" y="-275.7042253521127"/>

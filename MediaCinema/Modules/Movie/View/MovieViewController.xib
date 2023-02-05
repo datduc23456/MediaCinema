@@ -12,17 +12,18 @@
         <array key="Lato-Regular.ttf">
             <string>Lato-Regular</string>
         </array>
-        <array key="Nexa Regular.otf">
-            <string>NexaRegular</string>
-        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieViewController" customModule="MediaCinema" customModuleProvider="target">
             <connections>
                 <outlet property="collectionViewBanner" destination="Pfr-1J-xjR" id="gND-gt-JGp"/>
+                <outlet property="imgClearSearch" destination="v83-Jj-BMO" id="e36-ah-a3r"/>
+                <outlet property="lbPlaceHolder" destination="oB1-Cy-StE" id="lsh-oB-KCy"/>
+                <outlet property="movieInfoView" destination="dwe-So-U75" id="X5n-7g-1sF"/>
                 <outlet property="pageControl" destination="2Pw-1i-8ft" id="FBA-60-lXC"/>
                 <outlet property="scrollView" destination="sMf-1E-mvC" id="P3G-vP-yVo"/>
                 <outlet property="stackView" destination="Hhr-v5-IoL" id="8QJ-cC-qYm"/>
+                <outlet property="tfSearch" destination="QPB-me-bKv" id="XRd-sy-Bor"/>
                 <outlet property="view" destination="iN0-l3-epB" id="y2S-LW-4AE"/>
             </connections>
         </placeholder>
@@ -35,23 +36,23 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJx-3i-iaP">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="626"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="634"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3su-2r-Hrx">
                                     <rect key="frame" x="16" y="16" width="343" height="36"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_search" translatesAutoresizingMaskIntoConstraints="NO" id="LkB-G8-ZcS">
-                                            <rect key="frame" x="14" y="9" width="18" height="18"/>
+                                            <rect key="frame" x="14" y="6" width="24" height="24"/>
                                         </imageView>
                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QPB-me-bKv">
-                                            <rect key="frame" x="40" y="-1" width="295" height="38"/>
+                                            <rect key="frame" x="46" y="-1" width="289" height="38"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <fontDescription key="fontDescription" name="NexaRegular" family="NexaRegular" pointSize="12"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search movies, tv show,..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oB1-Cy-StE">
-                                            <rect key="frame" x="40" y="9.5" width="156" height="17"/>
+                                            <rect key="frame" x="46" y="9.5" width="156" height="17"/>
                                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                             <color key="textColor" red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -97,14 +98,14 @@
                                     </collectionViewFlowLayout>
                                 </collectionView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwe-So-U75" customClass="MovieInformationView" customModule="MediaCinema" customModuleProvider="target">
-                                    <rect key="frame" x="16" y="505" width="343" height="90"/>
+                                    <rect key="frame" x="16" y="513" width="343" height="90"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="90" id="V4b-kI-JP3"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Pw-1i-8ft" customClass="CHIPageControlJaloro" customModule="MediaCinema" customModuleProvider="target">
-                                    <rect key="frame" x="16" y="607" width="343" height="2"/>
+                                    <rect key="frame" x="16" y="615" width="343" height="2"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="2" id="lLe-TB-SEz"/>
@@ -134,7 +135,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Opi-8u-J2v">
-                                    <rect key="frame" x="0.0" y="626" width="375" height="0.0"/>
+                                    <rect key="frame" x="0.0" y="634" width="375" height="0.0"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hhr-v5-IoL">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
@@ -171,7 +172,7 @@
                                 <constraint firstItem="3su-2r-Hrx" firstAttribute="top" secondItem="OJx-3i-iaP" secondAttribute="top" constant="16" id="du6-jq-6Pw"/>
                                 <constraint firstItem="2Pw-1i-8ft" firstAttribute="leading" secondItem="OJx-3i-iaP" secondAttribute="leading" constant="16" id="j44-wn-bDF"/>
                                 <constraint firstAttribute="bottom" secondItem="Opi-8u-J2v" secondAttribute="bottom" id="md9-rA-nIR"/>
-                                <constraint firstItem="dwe-So-U75" firstAttribute="top" secondItem="Pfr-1J-xjR" secondAttribute="bottom" id="pnr-U2-Rcr"/>
+                                <constraint firstItem="dwe-So-U75" firstAttribute="top" secondItem="Pfr-1J-xjR" secondAttribute="bottom" constant="8" id="pnr-U2-Rcr"/>
                                 <constraint firstItem="Pfr-1J-xjR" firstAttribute="top" secondItem="3su-2r-Hrx" secondAttribute="bottom" constant="16" id="qlf-OY-DdI"/>
                                 <constraint firstItem="2Pw-1i-8ft" firstAttribute="top" secondItem="dwe-So-U75" secondAttribute="bottom" constant="12" id="rBe-bP-vZX"/>
                                 <constraint firstAttribute="height" priority="750" constant="500" id="vkq-om-1QW"/>
@@ -207,9 +208,14 @@
             <point key="canvasLocation" x="132" y="-10"/>
         </view>
     </objects>
+    <designables>
+        <designable name="2Pw-1i-8ft">
+            <size key="intrinsicContentSize" width="50" height="2"/>
+        </designable>
+    </designables>
     <resources>
         <image name="ic_clear_search" width="16" height="16"/>
-        <image name="ic_search" width="18" height="18"/>
+        <image name="ic_search" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

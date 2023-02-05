@@ -75,8 +75,12 @@ final class ServiceCore {
             guard let `self` = self else { return }
             switch result {
             case .success(let response):
-                ProgressHUDCenter.shared.trackingIndicator -= 1
-                self.debugLog(response: response)
+                if isShowHUD {
+                    ProgressHUDCenter.shared.trackingIndicator -= 1
+                }
+                DispatchQueue.main.async {
+                    self.debugLog(response: response)
+                }
                 if response.statusCode == 200 {
                     let data = response.data
 //                    data.tranforms1(to: D.self)

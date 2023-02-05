@@ -36,6 +36,7 @@ enum CoreTargetType: TargetType {
     case trendingMovie(page: Int)
     case trendingTvShow(page: Int)
     case newMovie(page: Int)
+    case getCredits(movieId: Int)
     var baseURL: URL { return URL(string: "https://api.themoviedb.org/3/")! }
     
     var path: String {
@@ -90,6 +91,8 @@ enum CoreTargetType: TargetType {
             return "/trending/tv/day"
         case .newMovie:
             return "/movie/upcoming"
+        case .getCredits(let movieId):
+            return "/movie/\(movieId)/credits"
         default:
             return ""
         }

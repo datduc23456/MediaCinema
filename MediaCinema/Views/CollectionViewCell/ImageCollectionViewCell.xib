@@ -17,8 +17,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="313" height="88"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JRt-WB-W8F">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JRt-WB-W8F">
                         <rect key="frame" x="0.0" y="0.0" width="313" height="88"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_play_blue" translatesAutoresizingMaskIntoConstraints="NO" id="uVO-gl-fcC">
                         <rect key="frame" x="140.66666666666666" y="28" width="32" height="32"/>
@@ -27,6 +32,10 @@
                             <constraint firstAttribute="height" constant="32" id="tIT-4c-i7k"/>
                         </constraints>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYE-Sj-ZQJ">
+                        <rect key="frame" x="0.0" y="0.0" width="313" height="88"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -36,12 +45,17 @@
                 <constraint firstItem="uVO-gl-fcC" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="DlT-dR-khV"/>
                 <constraint firstItem="JRt-WB-W8F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FFv-xU-Hku"/>
                 <constraint firstAttribute="bottom" secondItem="JRt-WB-W8F" secondAttribute="bottom" id="Qvq-ng-ijr"/>
+                <constraint firstAttribute="trailing" secondItem="xYE-Sj-ZQJ" secondAttribute="trailing" id="Y9U-cS-ZQf"/>
+                <constraint firstAttribute="bottom" secondItem="xYE-Sj-ZQJ" secondAttribute="bottom" id="eug-oF-U5f"/>
+                <constraint firstItem="xYE-Sj-ZQJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="i8K-Un-1K0"/>
                 <constraint firstAttribute="trailing" secondItem="JRt-WB-W8F" secondAttribute="trailing" id="lkp-Bp-iTi"/>
+                <constraint firstItem="xYE-Sj-ZQJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lup-Ag-cFT"/>
             </constraints>
             <size key="customSize" width="313" height="88"/>
             <connections>
                 <outlet property="icPlay" destination="uVO-gl-fcC" id="8s0-QN-tcS"/>
                 <outlet property="imgThumbnail" destination="JRt-WB-W8F" id="UdB-ds-3Lj"/>
+                <outlet property="viewGradient" destination="xYE-Sj-ZQJ" id="fmf-YW-eG0"/>
             </connections>
             <point key="canvasLocation" x="-70.992366412213741" y="0.70422535211267612"/>
         </collectionViewCell>

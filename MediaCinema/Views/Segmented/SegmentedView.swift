@@ -16,7 +16,7 @@ class SegmentedView: UIView {
         }
     }
     var selectedIndex: Int = 0
-    
+    var didSelectSegmented: ((Int)->Void) = {_ in}
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -39,15 +39,11 @@ class SegmentedView: UIView {
         collectionViewFlowLayout.scrollDirection = .horizontal
         collectionView = BaseCollectionView(frame: CGRect.init(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: collectionViewFlowLayout)
         collectionView.registerCell(for: SegmentedCollectionViewCell.className)
-//        collectionView.bounces = false
         self.addSubview(collectionView)
         collectionView.snp.makeConstraints {
             $0.top.leading.trailing.bottom.equalTo(self)
-//            $0.height.equalTo(54)
         }
         
-        
-//        collectionView.collectionViewLayout = collectionViewFlowLayout
         collectionView.dataSource = self
         collectionView.delegate = self
     }
@@ -69,6 +65,7 @@ extension SegmentedView: UICollectionViewDataSource, UICollectionViewDelegate, U
         cell.configCell(title, isSelected: indexPath.row == selectedIndex)
         cell.didTapAction = { [weak self] any in
             guard let `self` = self else { return }
+            self.didSelectSegmented(indexPath.row)
             self.selectedIndex = indexPath.row
             for cell in collectionView.visibleCells {
                 if let segmentedCell = cell as? SegmentedCollectionViewCell {

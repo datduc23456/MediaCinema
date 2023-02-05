@@ -16,7 +16,7 @@ extension MovieViewController {
         }
         allCategoryBtnView = BottomButtonView()
         allCategoryBtnView.snp.makeConstraints {
-            $0.height.equalTo(76)
+            $0.height.equalTo(60)
         }
         
         let separatorView = UIView()
@@ -25,17 +25,13 @@ extension MovieViewController {
             $0.height.equalTo(6)
         }
         collectionViewMovieWithGenre = BaseCollectionBuilder().withCell(MovieCollectionViewCell.self)
-            .withItemSize(CGSize(width: 105, height: 183))
+            .withItemSize(CGSize(width: 105, height: 200))
             .withSpacingInRow(8)
             .withScrollDirection(.horizontal)
             .build()
         collectionViewMovieWithGenre.contentInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
         collectionViewMovieWithGenre.snp.makeConstraints {
-            $0.height.equalTo(183)
-        }
-        tableViewTopRating = UITableView()
-        tableViewTopRating.snp.makeConstraints {
-            $0.height.equalTo(417)
+            $0.height.equalTo(200)
         }
         stackView.addArrangedSubview(segmentedView)
         stackView.addArrangedSubview(separatorView)
@@ -96,5 +92,64 @@ extension MovieViewController {
     func getGenreListDone() {
         let genreList = DTPBusiness.shared.listGenres
         segmentedView.dataSource = genreList.map({$0.name})
+    }
+    
+    func getMoviePopular(_ response: MovieResponse) {
+        let listMovie = response.results
+        let first5 = Array(listMovie.prefix(5))
+//        self.collectionViewBanner
+        bannerList = first5
+        for movie in first5 {
+            presenter.getMovieDetailForBanner(movie.id)
+        }
+        collectionViewBanner.reloadData()
+    }
+    
+    func getMoviePopularWithGenre(_ response: MovieResponse) {
+        popularList = response.results
+        collectionViewMovieWithGenre.reloadData()
+    }
+    
+    func getTopRate(_ response: MovieResponse) {
+        let listMovie = response.results
+        let first3 = Array(listMovie.prefix(3))
+        ratingList = first3
+        tableViewTopRating.reloadData()
+    }
+    
+    func getTrending(_ response: MovieResponse) {
+        let listMovie = response.results
+        let first6 = Array(listMovie.prefix(6))
+        trendingList = first6
+        collectionViewMovieTrending.reloadData()
+    }
+    
+    func getMovieDetail(_ response: MovieDetail) {
+        
+    }
+    
+    func getMovieDetailForBanner(_ response: MovieDetail) {
+        detailListBanner.append(response)
+    }
+}
+
+extension MovieViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        lbPlaceHolder.isHidden = true
+        imgClearSearch.isHidden = false
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField.text?.isEmpty == true {
+            lbPlaceHolder.isHidden = false
+            imgClearSearch.isHidden = true
+        } else {
+            imgClearSearch.isHidden = false
+        }
     }
 }

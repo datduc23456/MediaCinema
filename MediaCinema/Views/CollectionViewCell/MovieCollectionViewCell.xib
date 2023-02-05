@@ -5,11 +5,15 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="Lato-Regular.ttf">
             <string>Lato-Regular</string>
+        </array>
+        <array key="Nexa Bold.otf">
+            <string>Nexa-Bold</string>
         </array>
     </customFonts>
     <objects>
@@ -22,19 +26,58 @@
                 <rect key="frame" x="0.0" y="0.0" width="253" height="434"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="morbius" translatesAutoresizingMaskIntoConstraints="NO" id="A0G-LD-Vkf">
-                        <rect key="frame" x="0.0" y="0.0" width="253" height="158"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0l-dc-CED">
+                        <rect key="frame" x="0.0" y="0.0" width="253" height="389"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="morbius" translatesAutoresizingMaskIntoConstraints="NO" id="A0G-LD-Vkf">
+                        <rect key="frame" x="0.0" y="0.0" width="253" height="389"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="A0G-LD-Vkf" secondAttribute="height" multiplier="90/158" id="cDB-dh-tbb"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="cDB-dh-tbb"/>
                             </mask>
                         </variation>
                     </imageView>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FBm-gK-R4x">
+                        <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vis-83-iYN">
+                                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                <fontDescription key="fontDescription" name="Nexa-Bold" family="Nexa-Bold" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_heart" translatesAutoresizingMaskIntoConstraints="NO" id="ROA-K7-Jf3">
+                                <rect key="frame" x="8" y="8" width="16" height="16"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vis-83-iYN" firstAttribute="centerY" secondItem="FBm-gK-R4x" secondAttribute="centerY" id="1et-6e-Did"/>
+                            <constraint firstItem="ROA-K7-Jf3" firstAttribute="centerY" secondItem="FBm-gK-R4x" secondAttribute="centerY" id="7py-Lo-rlg"/>
+                            <constraint firstAttribute="bottom" secondItem="Vis-83-iYN" secondAttribute="bottom" id="FxJ-wg-w7O"/>
+                            <constraint firstAttribute="trailing" secondItem="Vis-83-iYN" secondAttribute="trailing" id="T2o-GD-xMJ"/>
+                            <constraint firstItem="Vis-83-iYN" firstAttribute="leading" secondItem="FBm-gK-R4x" secondAttribute="leading" id="VF6-1a-C5l"/>
+                            <constraint firstAttribute="height" constant="32" id="gYU-Lf-L7n"/>
+                            <constraint firstItem="ROA-K7-Jf3" firstAttribute="centerX" secondItem="FBm-gK-R4x" secondAttribute="centerX" id="hBb-r0-ZQP"/>
+                            <constraint firstItem="Vis-83-iYN" firstAttribute="top" secondItem="FBm-gK-R4x" secondAttribute="top" id="jxO-WW-NYJ"/>
+                            <constraint firstItem="Vis-83-iYN" firstAttribute="centerX" secondItem="FBm-gK-R4x" secondAttribute="centerX" id="nag-Cr-HEG"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="rx3-xv-TFP"/>
+                        </constraints>
+                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Un-VP-O1b">
-                        <rect key="frame" x="0.0" y="166" width="253" height="17"/>
+                        <rect key="frame" x="8" y="397" width="237" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="Jhl-6B-bqW"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -50,29 +93,42 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
+                <constraint firstItem="C0l-dc-CED" firstAttribute="top" secondItem="A0G-LD-Vkf" secondAttribute="top" id="69Z-wr-Nkn"/>
                 <constraint firstItem="A0G-LD-Vkf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9Rg-qD-Nii"/>
                 <constraint firstAttribute="trailing" secondItem="A0G-LD-Vkf" secondAttribute="trailing" id="E9e-Nw-Pi3"/>
+                <constraint firstItem="C0l-dc-CED" firstAttribute="trailing" secondItem="A0G-LD-Vkf" secondAttribute="trailing" id="H5E-Z6-PTs"/>
                 <constraint firstItem="A0G-LD-Vkf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="K9w-go-Uh7"/>
-                <constraint firstItem="9Un-VP-O1b" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="KNl-Ae-4t2"/>
-                <constraint firstItem="9Un-VP-O1b" firstAttribute="trailing" secondItem="A0G-LD-Vkf" secondAttribute="trailing" id="Six-LK-ulg"/>
-                <constraint firstItem="9Un-VP-O1b" firstAttribute="leading" secondItem="A0G-LD-Vkf" secondAttribute="leading" id="V2t-qu-mYr"/>
+                <constraint firstItem="9Un-VP-O1b" firstAttribute="trailing" secondItem="A0G-LD-Vkf" secondAttribute="trailing" constant="-8" id="Six-LK-ulg"/>
+                <constraint firstItem="9Un-VP-O1b" firstAttribute="leading" secondItem="A0G-LD-Vkf" secondAttribute="leading" constant="8" id="V2t-qu-mYr"/>
                 <constraint firstAttribute="bottom" secondItem="H1H-Z9-anH" secondAttribute="bottom" id="W9l-cH-nlm"/>
                 <constraint firstItem="A0G-LD-Vkf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Zfw-n7-B1Y"/>
+                <constraint firstItem="C0l-dc-CED" firstAttribute="leading" secondItem="A0G-LD-Vkf" secondAttribute="leading" id="ZjU-GO-Ym1"/>
+                <constraint firstItem="C0l-dc-CED" firstAttribute="bottom" secondItem="A0G-LD-Vkf" secondAttribute="bottom" id="a8w-8l-v67"/>
                 <constraint firstItem="H1H-Z9-anH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dT3-Gt-HyS"/>
+                <constraint firstItem="H1H-Z9-anH" firstAttribute="top" secondItem="9Un-VP-O1b" secondAttribute="bottom" id="ivo-4T-r48"/>
                 <constraint firstItem="A0G-LD-Vkf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mFv-zt-y1H"/>
                 <constraint firstAttribute="trailing" secondItem="H1H-Z9-anH" secondAttribute="trailing" id="rgK-KM-od9"/>
+                <constraint firstItem="FBm-gK-R4x" firstAttribute="leading" secondItem="A0G-LD-Vkf" secondAttribute="leading" id="sGz-4r-cnM"/>
                 <constraint firstAttribute="trailing" secondItem="A0G-LD-Vkf" secondAttribute="trailing" id="tup-PS-hha"/>
+                <constraint firstItem="FBm-gK-R4x" firstAttribute="top" secondItem="A0G-LD-Vkf" secondAttribute="top" id="w4K-v0-BNt"/>
                 <constraint firstItem="9Un-VP-O1b" firstAttribute="top" secondItem="A0G-LD-Vkf" secondAttribute="bottom" constant="8" id="w4z-qW-H6i"/>
             </constraints>
             <size key="customSize" width="253" height="434"/>
             <connections>
                 <outlet property="imgThumbnail" destination="A0G-LD-Vkf" id="yq0-WK-Dg4"/>
+                <outlet property="lbName" destination="9Un-VP-O1b" id="Nt3-nl-Jiu"/>
+                <outlet property="outerView" destination="C0l-dc-CED" id="1Yw-Xh-iCf"/>
+                <outlet property="viewFavorite" destination="FBm-gK-R4x" id="7BB-uU-bya"/>
                 <outlet property="viewRating" destination="H1H-Z9-anH" id="Cxe-qD-s0W"/>
             </connections>
             <point key="canvasLocation" x="197.70992366412213" y="122.53521126760565"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="ic_heart" width="16" height="16"/>
         <image name="morbius" width="105" height="158"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
